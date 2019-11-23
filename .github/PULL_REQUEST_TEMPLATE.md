@@ -1,6 +1,6 @@
 ## Status
 
-Read for review / Work in progress
+Ready for review / Work in progress
 
 ## Description of changes
 
