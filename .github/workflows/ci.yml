@@ -1,0 +1,25 @@
+name: CI
+on: [pull_request]
+
+jobs:
+    buildinfo:
+        runs-on: ubuntu-latest
+        container: debian:bullseye
+        steps:
+            - name: Install dependencies
+              run: |
+                apt-get update && apt-get install --yes python3-debian git git-lfs
+            - name: Checkout
+              uses: actions/checkout@v3
+              with:
+                lfs: true
+                fetch-depth: 0
+            - name: Check buildinfo
+              run: |
+                git config --global --add safe.directory '*'
+                # We already checked out securedrop-apt-test above, we also need
+                # securedrop-builder for the check-buildinfo script, and build-logs
+                # for the `.buildinfo` files to check against.
+                git clone https://github.com/freedomofpress/securedrop-builder --depth 1
+                git clone https://github.com/freedomofpress/build-logs --depth 1
+                ./securedrop-builder/scripts/check-buildinfo build-logs
