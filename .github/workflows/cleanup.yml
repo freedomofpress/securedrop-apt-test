@@ -25,5 +25,7 @@ jobs:
                 find core -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
                 find workstation -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
                 git add .
+                git config --global user.email "securedrop@freedom.press"
+                git config --global user.name "sdcibot"
                 git diff-index --quiet HEAD || git commit -m "Removing old packages"
                 git push origin main
