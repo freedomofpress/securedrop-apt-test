@@ -8,6 +8,9 @@ defaults:
   run:
     shell: bash
 
+permissions:
+  contents: write
+
 jobs:
     clean-old-packages:
         runs-on: ubuntu-latest
