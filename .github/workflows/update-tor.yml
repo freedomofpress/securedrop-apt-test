@@ -1,11 +1,11 @@
 name: Tor package updates
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 7 * * *"
 jobs:
     check-for-tor-updates:
         runs-on: ubuntu-latest
-        container: debian:bullseye-backports
+        container: debian:bookworm
         env:
           # This token is used by the issue generation script to open an issue
           # in the SecureDrop repository via the `gh` CLI (hence GH_TOKEN).
@@ -20,7 +20,6 @@ jobs:
             - uses: actions/checkout@v4
               with:
                 lfs: true
-                fetch-depth: 0
                 # This token is required to push to the protected `main` branch.
                 token: ${{ secrets.PUSH_TOKEN }}
             - name: Check for and commit Tor package updates
