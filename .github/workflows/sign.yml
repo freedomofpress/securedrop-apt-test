@@ -1,0 +1,60 @@
+name: Sign packages
+# Trigger on pushes to main that add new debs (or this workflow)
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'core/**'
+      - 'workstation/**'
+      - '.github/workflows/sign.yml'
+      - '.github/workflows/build.py'
+      - '.github/workflows/listing.py'
+      - '.github/workflows/index.html.j2'
+defaults:
+  run:
+    shell: bash
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        container: debian:bookworm
+        steps:
+            - name: Install dependencies
+              run: |
+                apt-get update
+                apt-get install --yes git git-lfs python3 python3-debian python3-jinja2 reprepro
+            - uses: actions/checkout@v4
+              with:
+                lfs: true
+                token: ${{ secrets.PUSH_TOKEN }}
+            - name: Configuration
+              env:
+                SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+              run: |
+                echo "$SIGNING_KEY" | gpg --import -
+                git config --global --add safe.directory '*'
+                git config user.email "securedrop@freedom.press"
+                git config user.name "sdcibot"
+            - name: Clean old packages
+              run: |
+                find core -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
+                find workstation -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
+                git add .
+            - name: Sign packages
+              run: |
+                ./.github/workflows/build.py
+                git add .
+            - name: Update metadata
+              run: |
+                # Only run if we made changes above
+                if [[ -n "$(git diff --staged)" ]]; then
+                  reprepro --basedir ./repo --outdir ./repo/public export
+                fi
+                ./.github/workflows/listing.py
+                git add .
+            - name: git commit and push
+              run: |
+                # Index will be clean if there are no changes
+                git diff-index --quiet HEAD || git commit -m "Signing new packages"
+                git push origin main

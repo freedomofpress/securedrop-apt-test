@@ -30,8 +30,7 @@ jobs:
 
                 # Import the Tor repo signing key
                 gpg --import repo/conf/updates-keys/*.gpg
-                # Run reprepro update, skip export since we just want the debs (and we don't have
-                # the repo signing key anyways)
+                # Run reprepro update, skip export since we just want the debs
                 REPREPRO_BASE_DIR=repo reprepro --export=never update
 
                 # Move the new packages over, intentionally leaving the old ones around
