@@ -1,0 +1,122 @@
+Package: securedrop-client
+Version: 0.8.0-dev-20220901-060402+buster
+Architecture: all
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 33697
+Depends: python3-pyqt5, python3-pyqt5.qtsvg, apparmor-utils
+Homepage: https://github.com/freedomofpress/securedrop-client
+Priority: optional
+Section: unknown
+Filename: pool/nightlies/s/securedrop-client/securedrop-client_0.8.0-dev-20220901-060402+buster_all.deb
+Size: 8423568
+SHA256: fcec05608ec9c9aa68a10f14b08d170af85a00325478241e6d03a5cdf5e69eea
+SHA1: f3ed89c9e8151e2e0bf363def3751d320c01e28f
+MD5sum: c890d556324236441c4d356be2efa477
+Description: securedrop client for qubes workstation
+
+Package: securedrop-export
+Version: 0.3.0-dev-20220901-060402+buster
+Architecture: all
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 17999
+Depends: cryptsetup, cups, printer-driver-brlaser, printer-driver-hpcups, system-config-printer, xpp, libcups2-dev, python3-dev, libtool-bin, unoconv, gnome-disk-utility
+Homepage: https://github.com/freedomofpress/securedrop-export
+Priority: optional
+Section: utils
+Filename: pool/nightlies/s/securedrop-export/securedrop-export_0.3.0-dev-20220901-060402+buster_all.deb
+Size: 4928016
+SHA256: 062ec2e027bd775f41098d9003ad817c2488c7b02970416c0f86b8f4b384b0ed
+SHA1: 233911023df43f66ecbf255e6f19f144c28a6742
+MD5sum: c63c0174e381c51e6339ac6e55155fd6
+Description: Submission export scripts for SecureDrop Workstation
+ This package provides scripts used by the SecureDrop Qubes Workstation to
+ export submissions from the client to external storage, via the sd-export
+ Qube.
+
+Package: securedrop-keyring
+Version: 0.1.6-dev-20220901-060409+buster
+Architecture: all
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 18
+Depends: gnupg
+Homepage: https://github.com/freedomofpress/securedrop-debian-packaging
+Priority: optional
+Section: web
+Filename: pool/nightlies/s/securedrop-keyring/securedrop-keyring_0.1.6-dev-20220901-060409+buster_all.deb
+Size: 4912
+SHA256: 16dacffb81a1f07b8eaa27c150e6a0f4e963136ebd694ed4f1e87a628722cde0
+SHA1: e0db66dde77c0cbcc01f1f74f3c84957dea71d54
+MD5sum: e759d25769acee8e8df3a3a0dabe1ec1
+Description: Provides an apt keyring for SecureDrop-related packages, so the master signing key used for SecureDrop packages can be updated via apt.
+
+Package: securedrop-log
+Version: 0.2.0-dev-20220901-060354+buster
+Architecture: all
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 18192
+Depends: python3-distutils
+Homepage: https://github.com/freedomofpress/securedrop-log
+Priority: optional
+Section: utils
+Filename: pool/nightlies/s/securedrop-log/securedrop-log_0.2.0-dev-20220901-060354+buster_all.deb
+Size: 4951528
+SHA256: 2c713fb379d82a397bc70ffebc3b252bb0e69ea99bba7560a2e1416c74090a1e
+SHA1: ecb5e60e5740be436e97eaa5af34526a0d4c8b3a
+MD5sum: 2ae95db6a9af8ef97547730e62715994
+Description: Python module and qrexec service to store logs for SecureDrop Workstation
+ This package provides Python module and qrexec service files to create a logging VM in
+ SecureDrop Workstation project in Qubes.
+
+Package: securedrop-proxy
+Version: 0.4.0-dev-20220901-060404+buster
+Architecture: all
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 22014
+Depends: libyaml-0-2
+Homepage: https://github.com/freedomofpress/securedrop-proxy
+Priority: optional
+Section: unknown
+Filename: pool/nightlies/s/securedrop-proxy/securedrop-proxy_0.4.0-dev-20220901-060404+buster_all.deb
+Size: 5543124
+SHA256: a33c42539016860ef27851d1aa9d0dc58d69bb63556a97ac5771ab33d26c4745
+SHA1: 1eadebc594708928ed10508e813aec5710c99dca
+MD5sum: 03cb1771bffc01e0a36905b5dee0c0da
+Description: This is securedrop Qubes proxy service
+ This package provides the network proxy on Qubes to talk to the SecureDrop server.
+
+Package: securedrop-workstation-config
+Version: 0.2.0-dev-20220901-060356+buster
+Architecture: all
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 45
+Depends: nautilus, gvfs-bin, securedrop-keyring
+Homepage: https://github.com/freedomofpress/securedrop-workstation-config
+Priority: optional
+Section: unknown
+Filename: pool/nightlies/s/securedrop-workstation-config/securedrop-workstation-config_0.2.0-dev-20220901-060356+buster_all.deb
+Size: 5828
+SHA256: 0ff210b4b98b18020eaca5c5e5b1ca5a550d42a857249fefa2111e6cd4a9e7a7
+SHA1: f6e99b89a50f65ec71c7bc54868e275d95de96eb
+MD5sum: dd46b2c5ef3d547be948b2ee31e28934
+Description: This is the SecureDrop workstation template configuration package.
+ This package provides dependencies and configuration for the Qubes SecureDrop workstation VM Templates.
+
+Package: securedrop-workstation-viewer
+Version: 0.2.0-dev-20220901-060405+buster
+Architecture: all
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 8
+Depends: securedrop-workstation-config, securedrop-workstation-grsec, apparmor-profiles, apparmor-profiles-extra, apparmor-utils, audacious, eog, evince, file-roller, gedit, totem
+Conflicts: securedrop-workstation-svs-disp
+Replaces: securedrop-workstation-svs-disp
+Provides: securedrop-workstation-svs-disp
+Homepage: https://github.com/freedomofpress/securedrop-debian-packaging
+Priority: optional
+Section: unknown
+Filename: pool/nightlies/s/securedrop-workstation-viewer/securedrop-workstation-viewer_0.2.0-dev-20220901-060405+buster_all.deb
+Size: 1772
+SHA256: 0b1b17ccf9d3e0470976cf5005cef756c13e6f2fb99155518d08a67d6c6e107d
+SHA1: 43ae2034e5221c3592905ba9c875a64d082e138b
+MD5sum: b784d83d8e044e178b1bab7914c98f56
+Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
+
