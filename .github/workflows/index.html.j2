@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    {% for codename, data in repo_data.items() %}
+    <h2 id="{{ codename }}">{{ codename }}</h2>
+        {% for component, packages in data.components.items() %}
+        <h3>{{ component }}</h3>
+        {% if packages %}
+        <ul>
+            {% for package in packages|sort(attribute='name') %}
+            <li>
+                <strong>{{ package.name }}</strong>:
+                <span class="version">{{ package.version }}</span>
+                <span class="size">({{ package.size }})</span>
+                <span class="architecture">[{{ package.architecture }}]</span>
+                <a href="{{ package.download_link }}" class="download-link" title="Download {{ package.filename }}">Download</a>
+                <div class="package-description">{{ package.description }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No packages found in this component.</p>
+        {% endif %}
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>
