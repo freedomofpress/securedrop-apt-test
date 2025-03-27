@@ -3,7 +3,7 @@ name: Sign packages
 on:
   push:
     branches:
-      - main
+      - debug
     paths:
       - 'core/**'
       - 'workstation/**'
@@ -57,4 +57,4 @@ jobs:
               run: |
                 # Index will be clean if there are no changes
                 git diff-index --quiet HEAD || git commit -m "Signing new packages"
-                git push origin main
+                git push origin debug
