@@ -202,78 +202,78 @@ Description: Daemon to automatically set appropriate PaX flags
 
 Package: securedrop-app-code
 Source: securedrop
-Version: 2.12.0~rc3+noble
+Version: 2.12.2~rc1+noble
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 64595
+Installed-Size: 64631
 Depends: debconf (>= 0.5) | debconf-2.0, apparmor (>= 4.0.1really4.0.1-0ubuntu0.24.04.3), apache2, apparmor-utils, coreutils, gnupg2, libapache2-mod-xsendfile, paxctld, python3, redis-server, securedrop-config, securedrop-keyring, sqlite3
 Conflicts: libapache2-mod-wsgi, supervisor
 Replaces: libapache2-mod-wsgi, supervisor
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
-Filename: pool/main/s/securedrop/securedrop-app-code_2.12.0~rc3+noble_amd64.deb
-Size: 13522104
-SHA256: c088471412c8f578f5a47278f38ee561431632900efb81948290ede3098d6c04
-SHA1: a219acc948a5a22073a2dbebcc87ce535335e1d8
-MD5sum: 58409b0485fe5a2f2566312b6e273f59
+Filename: pool/main/s/securedrop/securedrop-app-code_2.12.2~rc1+noble_amd64.deb
+Size: 13523662
+SHA256: 893ed6e93e84915d8140a091f64d465dd767bcd49da735d7cd4ac93f612d7245
+SHA1: ded3fc61a924b87a2976cbe8138d326f9831ae00
+MD5sum: c4f6c0853be47ab9dde6f65bd380af0d
 Description: SecureDrop application code, dependencies, Apache configuration, systemd services, and AppArmor profiles. This package will put the AppArmor profiles in enforce mode.
 
 Package: securedrop-app-code-dbgsym
 Package-Type: ddeb
 Source: securedrop
-Version: 2.12.0~rc3+noble
+Version: 2.12.2~rc1+noble
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 2529
-Depends: securedrop-app-code (= 2.12.0~rc3+noble)
+Installed-Size: 2511
+Depends: securedrop-app-code (= 2.12.2~rc1+noble)
 Priority: optional
 Section: debug
-Filename: pool/main/s/securedrop/securedrop-app-code-dbgsym_2.12.0~rc3+noble_amd64.deb
-Size: 1001256
-SHA256: 6feb2ceab58780ee6390dc68cac2ea9fd2b1392aa155f8a7d023da29a7a35001
-SHA1: 7b386d9d79de1998468ba57f5a1bd6547636d5a2
-MD5sum: 802bff2661bb3d5d717a4d70354f1e4c
+Filename: pool/main/s/securedrop/securedrop-app-code-dbgsym_2.12.2~rc1+noble_amd64.deb
+Size: 1000158
+SHA256: 9d7999afd8ada43ffc6e8d100895000d2642946dd45f1aa3a56347f16f083a1a
+SHA1: ee856341589180a30252f00bbf1ca035684207e8
+MD5sum: 81df9c8170f60b0ebdcd2cdc21030df6
 Description: debug symbols for securedrop-app-code
-Build-Ids: 22866fc0dc57ff67a24fdd860a7c38dbaa0ff56d 27697d128f7494b395b44e642fda7a12157451c5 4c042e4ee9014e14efae78b5ca1c6cdf13cd5e66 55543a414cb8fdb8f9a874902a507fc35b64a1ee 6781c553419f79508458c834fb33bae02420a86a 8abb1d25d253ba58f9fc73eac5a25c8736ff2a37 9d212e17f83747708dd1c92320312bec5e9d38f1 c722d79b416a2e30aec15346049f2fc348251b50 cbca5cc25b4290e735005db7467f4dc526fe35ac e08fcb1a99d32b0df3a66660b71e1253e07948e2 ec90dc0e173ad24f905ce2715710848a87129bc9
+Build-Ids: 22d52a6b7e888e90ad4d24cac2b603dfdeafb756 43dd7e03fc868cd68cd07d73066a6df41804d492 4e98b51377f2c7ad1339ce57eef58a26d72b2d15 83489ac84fb976cb30ff26c421c6ff5c27915d87 990da9223cd8ffbdd09bb27b504682620df38507 a700668f2e5adbc9c951403475307e32663bbeea af29fe8548398553128e5f1e3495235de3be3551 d2b6e7c90e182ebfca012d7d94853c5fbccba6d8 e56d034c39cde5925d77e2b036eeb7e2277df3f2 e62316b184b04e04856121d16c5786413e5a90ed f91defe9d01e8f6d6706e26fef3fa83654af1f2d
 
 Package: securedrop-config
 Source: securedrop
-Version: 2.12.0~rc3+noble
+Version: 2.12.2~rc1+noble
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 1863
+Installed-Size: 1979
 Depends: libc6 (>= 2.39), libgcc-s1 (>= 4.2), systemd-hwe-hwdb, unattended-upgrades, update-notifier-common
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
-Filename: pool/main/s/securedrop/securedrop-config_2.12.0~rc3+noble_amd64.deb
-Size: 466626
-SHA256: 5f8d49f3d18cc1159d3e871a16e0687a9af171d2df27e70d0f4d53763fb4f2e6
-SHA1: 0d471a0543f3cbe4554ecde5948b152ecc877bd1
-MD5sum: 5b96bddf25829d1dfe06d9ede4dfb611
+Filename: pool/main/s/securedrop/securedrop-config_2.12.2~rc1+noble_amd64.deb
+Size: 477774
+SHA256: 1237f7d96d411f48d15101809d2930d3f03f1293f84a16de5f2fea637072c5de
+SHA1: 178089219910a1096e016437fc042ea38afe3745
+MD5sum: 749edf5649ea9555e735bc2faf580f17
 Description: Establishes baseline system state for running SecureDrop.
  Configures apt repositories.
 
 Package: securedrop-config-dbgsym
 Package-Type: ddeb
 Source: securedrop
-Version: 2.12.0~rc3+noble
+Version: 2.12.2~rc1+noble
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 411
-Depends: securedrop-config (= 2.12.0~rc3+noble)
+Installed-Size: 443
+Depends: securedrop-config (= 2.12.2~rc1+noble)
 Priority: optional
 Section: debug
-Filename: pool/main/s/securedrop/securedrop-config-dbgsym_2.12.0~rc3+noble_amd64.deb
-Size: 70418
-SHA256: ba87fc130ca0ad273381999e726b313a4b6aad102ec7f27d1821265e13c0ef75
-SHA1: 586c31bf732dd1d7133ea8615c7fd5a2e0ecfebf
-MD5sum: 487baafab56592856a314560c0d5675a
+Filename: pool/main/s/securedrop/securedrop-config-dbgsym_2.12.2~rc1+noble_amd64.deb
+Size: 74764
+SHA256: d7b902fcae93fb0469def061ccd6740d975842be47fe19e5840edc1049a681ff
+SHA1: e5f94cb90a367f0ef7261f93d0a58d37b62ac115
+MD5sum: e809f6354128c67e43e0d9bcaade2a86
 Description: debug symbols for securedrop-config
-Build-Ids: 2a8591da7f95ea7831d386d5c184be18a1882a69 c1d687f2bb9ca7bf4f3c054d1909cad46460e6df
+Build-Ids: 62788e01279c4d206cbd65e8a190586b25e6c234 c28b478fe1a35141e8c1a1376627b8bca9cb28ee
 
 Package: securedrop-grsec
 Source: linux-upstream
@@ -295,8 +295,8 @@ Description: Metapackage providing a grsecurity-patched Linux kernel for use
  by FPF. Package also includes sysctl and PaX flags calls for GRUB.
 
 Package: securedrop-keyring
-Source: securedrop (2.12.0~rc3+noble)
-Version: 0.2.2+2.12.0~rc3+noble
+Source: securedrop (2.12.2~rc1+noble)
+Version: 0.2.2+2.12.2~rc1+noble
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 17
@@ -304,16 +304,16 @@ Depends: gnupg
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
-Filename: pool/main/s/securedrop/securedrop-keyring_0.2.2+2.12.0~rc3+noble_all.deb
-Size: 7388
-SHA256: 24e541425920b5a8bb1b1b630c47a948df2702f30654e87957d80be2289e891a
-SHA1: afff924e036382e1c4007e869d41006c55212ecb
-MD5sum: c95b255b7e3fdecd128c3e2a535073b0
+Filename: pool/main/s/securedrop/securedrop-keyring_0.2.2+2.12.2~rc1+noble_all.deb
+Size: 7384
+SHA256: 6b0f35568e4d11f87c9acb90750b3f404410af7b596db0fd4d6f55bc907a2a4e
+SHA1: faacc19b7f8690e930c0cc8b8f1e60bf3bd2dcc3
+MD5sum: 5bf484654e14ac0cfd51fa7b367cf541
 Description: Provides an apt keyring for SecureDrop-related packages, so the master signing key used for SecureDrop packages can be updated via apt.
 
 Package: securedrop-ossec-agent
-Source: securedrop (2.12.0~rc3+noble)
-Version: 3.6.0+2.12.0~rc3+noble
+Source: securedrop (2.12.2~rc1+noble)
+Version: 3.6.0+2.12.2~rc1+noble
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 24
@@ -323,18 +323,18 @@ Replaces: ossec-agent
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
-Filename: pool/main/s/securedrop/securedrop-ossec-agent_3.6.0+2.12.0~rc3+noble_all.deb
-Size: 5030
-SHA256: 997181e0e6c87456f1170aabb234ad9e9d5088cc42b4ef9954e8f1fe9097cef0
-SHA1: bfa89f69a6fde2c94348353e9145adb49ffd999b
-MD5sum: 03fff724cb12dbb88a40486ebc1487b8
+Filename: pool/main/s/securedrop/securedrop-ossec-agent_3.6.0+2.12.2~rc1+noble_all.deb
+Size: 5042
+SHA256: 35ea7ff5ebed2ffafb1542ed24096b832fbc6b42b0ea2548f705fb6560676244
+SHA1: 89ee04b698cc0c9c3a58b1ee62e6a8744ed7ba86
+MD5sum: e137c01fdd762acb812de167394bede1
 Description: Installs the securedrop pre-configured OSSEC agent
  This package installs an OSSEC agent pre-configured for the
  SecureDrop app server.
 
 Package: securedrop-ossec-server
-Source: securedrop (2.12.0~rc3+noble)
-Version: 3.6.0+2.12.0~rc3+noble
+Source: securedrop (2.12.2~rc1+noble)
+Version: 3.6.0+2.12.2~rc1+noble
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 40
@@ -344,11 +344,11 @@ Replaces: ossec-server
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
-Filename: pool/main/s/securedrop/securedrop-ossec-server_3.6.0+2.12.0~rc3+noble_all.deb
-Size: 8860
-SHA256: c7b9b33c600376d5c9d26273b0997af7f878369e76922ecebe5960adbeb3fb03
-SHA1: c67211a139be2b4dbce3ce540240329404808bcc
-MD5sum: 7e72f89e283019df5f263d3f9a585ec3
+Filename: pool/main/s/securedrop/securedrop-ossec-server_3.6.0+2.12.2~rc1+noble_all.deb
+Size: 8996
+SHA256: 82f50ef6ad2a3c211a6a0dcba0b97487c136b772c23b2f118e4683722a6126f8
+SHA1: 71081095832941fffd3d29dfcf0c96a1be736f3f
+MD5sum: 7255a2b7eea2141f843daaf785c821bd
 Description: Installs the pre-packaged OSSEC server
  This package installs an OSSEC server pre-configured for the
  SecureDrop mon server. It is configured to email all alerts to
