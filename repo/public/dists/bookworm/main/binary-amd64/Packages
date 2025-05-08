@@ -112,6 +112,25 @@ Description: Linux kernel headers for 6.6.88-1-grsec-workstation on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-6.6.89-1-grsec-workstation
+Source: linux-upstream
+Version: 6.6.89-1-grsec-workstation-1
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 189044
+Homepage: https://securedrop.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-6.6.89-1-grsec-workstation_6.6.89-1-grsec-workstation-1_amd64.deb
+Size: 25110880
+SHA256: f35f559067b7ba846795fc015c48c62e15a7a6b375053600a2eaac468f3773f8
+SHA1: 452b085c63516f1b321f1bd709eb5a692de78d3f
+MD5sum: c4a448a9261598bfb067d0e0562d6e89
+Description: Linux kernel headers for 6.6.89-1-grsec-workstation on amd64
+ This package provides kernel header files for 6.6.89-1-grsec-workstation on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-image-6.6.22-grsec-workstation-1
 Source: linux-upstream
 Version: 6.6.22-grsec-workstation-1
@@ -219,6 +238,24 @@ MD5sum: c533316d7507772073409ca70c42eb02
 Description: Linux kernel, version 6.6.88-1-grsec-workstation
  This package contains the Linux kernel, modules and corresponding other
  files, version: 6.6.88-1-grsec-workstation.
+
+Package: linux-image-6.6.89-1-grsec-workstation
+Source: linux-upstream
+Version: 6.6.89-1-grsec-workstation-1
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 355686
+Homepage: https://securedrop.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-6.6.89-1-grsec-workstation_6.6.89-1-grsec-workstation-1_amd64.deb
+Size: 54636220
+SHA256: b9bcf209f41b9356e071f5d86daa6ab61cef9025aff436e505dabc68e19dbf2a
+SHA1: c50642411db469f0e0f57ddf4a10a619ea4e4bb5
+MD5sum: 3ff95c3403e3a23294477025acd98621
+Description: Linux kernel, version 6.6.89-1-grsec-workstation
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.6.89-1-grsec-workstation.
 
 Package: paxctld
 Version: 1.2.5-1
@@ -442,20 +479,20 @@ Description: This is the SecureDrop workstation template configuration package.
 
 Package: securedrop-workstation-grsec
 Source: linux-upstream
-Version: 6.6.88-1-grsec-workstation-1
+Version: 6.6.89-1-grsec-workstation-1
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 8
 Pre-Depends: qubes-kernel-vm-support
-Depends: linux-image-6.6.88-1-grsec-workstation, paxctld
+Depends: linux-image-6.6.89-1-grsec-workstation, paxctld
 Homepage: https://securedrop.org/
 Priority: optional
 Section: admin
-Filename: pool/main/l/linux-upstream/securedrop-workstation-grsec_6.6.88-1-grsec-workstation-1_amd64.deb
+Filename: pool/main/l/linux-upstream/securedrop-workstation-grsec_6.6.89-1-grsec-workstation-1_amd64.deb
 Size: 1948
-SHA256: c0f06f5df2d4811c9cc6d37d6e008dc29202d109c361ca1ffb2b5a3521096f21
-SHA1: 26a83674460dd17c6c7571e257fad13b3c203b31
-MD5sum: b3f682623c5111c17cf38e4684a51c72
+SHA256: f0885718df27cb8691f8b4afad1abafa2412bab515b7d75c7365ebb923557830
+SHA1: 98b7a34e9383c45af6646fd64468216a78c195c6
+MD5sum: d43eb3e24bfbafbf6e6b1dd5c8f1cad1
 Description: Linux for SecureDrop Workstation template (meta-package)
  Metapackage providing a grsecurity-patched Linux kernel for use in SecureDrop
  Workstation Qubes templates. Depends on the most recently built patched kernel
