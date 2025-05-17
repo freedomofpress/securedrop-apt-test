@@ -20,6 +20,7 @@
             <li>
                 <strong>{{ package.name }}</strong>:
                 <span class="version">{{ package.version }}</span>
+                <a href="https://github.com/{{ repo_name }}/commit/{{ package.commit }}", target="_blank"><span class="date">{{ package.date }}</span></a>
                 <span class="size">({{ package.size }})</span>
                 <span class="architecture">[{{ package.architecture }}]</span>
                 <a href="{{ package.download_link }}" class="download-link" title="Download {{ package.filename }}">Download</a>
