@@ -17,7 +17,7 @@ jobs:
               run: |
                 apt-get update && apt-get install --yes reprepro ca-certificates dctrl-tools \
                   git git-lfs openssh-client python3 gh
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v5
               with:
                 lfs: true
                 # This token is required to push to the protected `main` branch.
