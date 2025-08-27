@@ -34,9 +34,7 @@ jobs:
                 reprepro --basedir repo --outdir repo/public --export=never update
 
                 # Copy the new packages over, intentionally leaving the old ones around
-                cp repo/public/pool/main/t/tor/*focal*.deb core/focal/
                 cp repo/public/pool/main/t/tor/*noble*.deb core/noble/
-                git add core/focal/*.deb
                 git add core/noble/*.deb
                 # If there are staged changes, git diff will fail, so we commit and push
                 git diff --staged --exit-code || (git commit -m "Automatically updating Tor packages" \
