@@ -25,7 +25,7 @@ def format_size(size_bytes):
 
 def commit_info(git_root: Path, codename: str, component: str, pkginfo) -> (str, str):
     # Calculate the original filename in the core or workstation folders
-    if codename in ["noble", "focal"]:
+    if codename == "noble":
         group = "core"
     else:
         group = "workstation"
