@@ -314,6 +314,40 @@ Description: Daemon to automatically set appropriate PaX flags
  across any updates made to the binaries listed in the paxctld
  configuration file.
 
+Package: securedrop-arti
+Version: 1.4.6+bookworm
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 11945
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), libsqlite3-0 (>= 3.7.15), libssl3 (>= 3.0.0), systemd | systemd-standalone-sysusers | systemd-sysusers
+Homepage: https://github.com/freedomofpress/securedrop-client
+Priority: optional
+Section: unknown
+Filename: pool/main/s/securedrop-arti/securedrop-arti_1.4.6+bookworm_amd64.deb
+Size: 3715968
+SHA256: 287963076d9d705c13fda80a3b05b6a6ae7f734a95accca8abb838ed0969fef9
+SHA1: fc7500a0be3692a990dc0905e7271da9072749dd
+MD5sum: 524a62462bac2afcfd42a59b190a788e
+Description: Tor daemon written in Rust
+
+Package: securedrop-arti-dbgsym
+Source: securedrop-arti
+Version: 1.4.6+bookworm
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 28520
+Depends: securedrop-arti (= 1.4.6+bookworm)
+Priority: optional
+Section: debug
+Filename: pool/main/s/securedrop-arti/securedrop-arti-dbgsym_1.4.6+bookworm_amd64.deb
+Size: 27493988
+SHA256: 50a86850dcb21aa99452ad97be00b50ca17817ce655d08e5ba1aeb80fb57c08d
+SHA1: 5ab4c97b5ab425f61e82ed37727adaa644fb9e41
+MD5sum: 966764c7ef3f04fb80fc0ba5f3d8b7a9
+Description: debug symbols for securedrop-arti
+Build-Ids: 047cb11107c5bbce7a922d69b432f0c5e7c60873
+
 Package: securedrop-client
 Version: 0.15.0~rc1+bookworm
 Architecture: amd64
