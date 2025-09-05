@@ -35,7 +35,9 @@ jobs:
 
                 # Copy the new packages over, intentionally leaving the old ones around
                 cp repo/public/pool/main/t/tor/*noble*.deb core/noble/
+                cp repo/public/pool/main/t/tor/*bookworm*.deb workstation/bookworm/
                 git add core/noble/*.deb
+                git add workstation/bookworm/*.deb
                 # If there are staged changes, git diff will fail, so we commit and push
                 git diff --staged --exit-code || (git commit -m "Automatically updating Tor packages" \
                     && git push origin main && ./scripts/new-tor-issue)
