@@ -1,3 +1,12 @@
+Name: tor-bookworm
+Method: https://deb.torproject.org/torproject.org
+Components: main
+Suite: bookworm
+GetInRelease: no
+Architectures: amd64
+VerifyRelease: 74A941BA219EC810
+ListShellHook: grep-dctrl -e -S '^tor(-geoip)?$' || [ $? -eq 1 ]
+
 Name: tor-noble
 Method: https://deb.torproject.org/torproject.org
 Components: main
