@@ -587,10 +587,10 @@ MD5sum: 1725e9b618891ce2c29735287ca7c955
 Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
 
 Package: tor
-Version: 0.4.8.17-1~d12.bookworm+1
+Version: 0.4.8.18-1~d12.bookworm+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 5769
+Installed-Size: 5771
 Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libevent-2.1-7 (>= 2.1.8-stable), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 0.0.0~20120605), libssl3 (>= 3.0.0), libsystemd0, libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4), adduser, runit-helper (>= 2.14.0~), lsb-base
 Recommends: logrotate, tor-geoipdb, torsocks
 Suggests: mixmaster, torbrowser-launcher, socat, apparmor-utils, nyx, obfs4proxy
@@ -599,11 +599,11 @@ Breaks: runit (<< 2.1.2-51~)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.8.17-1~d12.bookworm+1_amd64.deb
-Size: 2055716
-SHA256: c13085eb42ba88311764cb15c962f6e0e4fccdc8062305ecbdd09e60e2c0e642
-SHA1: 52ede33f28241459004c71162e416336548f293e
-MD5sum: 47a2e47e7f75939e0010e6f0ba457b91
+Filename: pool/main/t/tor/tor_0.4.8.18-1~d12.bookworm+1_amd64.deb
+Size: 2056104
+SHA256: 66e84852599f0b0f5d0f429d0acedad0903b9d82ebf60b0475e6b74d93fae424
+SHA1: 201dc0109c6666a53683ba612e95ccbc96ac2ade
+MD5sum: d0ab9174c115d6a54e283969fe523e0f
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -637,41 +637,41 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-dbgsym
 Source: tor
-Version: 0.4.8.17-1~d12.bookworm+1
+Version: 0.4.8.18-1~d12.bookworm+1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 6187
-Depends: tor (= 0.4.8.17-1~d12.bookworm+1)
+Installed-Size: 6189
+Depends: tor (= 0.4.8.18-1~d12.bookworm+1)
 Breaks: tor-dbg (<< 0.3.1.5-alpha)
 Replaces: tor-dbg (<< 0.3.1.5-alpha)
 Priority: optional
 Section: debug
-Filename: pool/main/t/tor/tor-dbgsym_0.4.8.17-1~d12.bookworm+1_amd64.deb
-Size: 5758416
-SHA256: 524df1165e15a089af3289db1a48f30c223ce4a8ef8e62d227593cf874ac1d7a
-SHA1: 62b68b5bc9a9375755b4c1eeb1d02d814b5a0ee1
-MD5sum: 4c38ecfcb3c604f570498f5f8fbc253a
+Filename: pool/main/t/tor/tor-dbgsym_0.4.8.18-1~d12.bookworm+1_amd64.deb
+Size: 5761412
+SHA256: 39b635988dfae91505085cf64d26952d85028ab8d584729fa355a8ede5593ca7
+SHA1: 655ab94bec85d423d0ee14fa0261b2c5671e3dfb
+MD5sum: 0ab30b99eb0e59715c6ca0822b01931d
 Description: debug symbols for tor
-Build-Ids: 4521524862c156883c4ea0ea1368d88aeeab5933 8b276ae623017c4c8ebf2a56975b6b9e0369ada8 ee2c8068f272d2ee96c69aaa4ebe7b23ab663bd2 ff7c96a83f96447e5c618885c1c0ee8e80d5521b
+Build-Ids: 19f3a5877f4ce8f74ba738f56635b866c95f8957 75f68d2a393e21eb1aa20a4e838265c2f6dbf697 9403557512eba0626c526919902b6c8efb2187eb a4538222cfb67fdd105186561dae4d11c4d1b2a4
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.8.17-1~d12.bookworm+1
+Version: 0.4.8.18-1~d12.bookworm+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 20815
-Depends: tor (>= 0.4.8.17-1~d12.bookworm+1)
+Installed-Size: 21151
+Depends: tor (>= 0.4.8.18-1~d12.bookworm+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.8.17-1~d12.bookworm+1_all.deb
-Size: 2449256
-SHA256: 9dbb9c2d4fa7dd4e0132bc6504d8289603e166313350ab73329cfe772c1b0b25
-SHA1: 61684b329210a75584106b34705161c288f88e18
-MD5sum: 312393bfcdc5c5621e5961c57626a0c1
+Filename: pool/main/t/tor/tor-geoipdb_0.4.8.18-1~d12.bookworm+1_all.deb
+Size: 2473016
+SHA256: c02ae028a234e46d8bbeb49ec439bb439d1abe6f7de20a1bd97d2c5d67c247e8
+SHA1: d304f8726215034bfe06b5c12699f42e25c26a5c
+MD5sum: 24d1497751c63ef481e1e992559ad180
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
