@@ -9,11 +9,14 @@ jobs:
             - name: Install dependencies
               run: |
                 apt-get update && apt-get install --yes python3-debian git git-lfs
+                
             - name: Checkout
               uses: actions/checkout@v5
               with:
                 lfs: true
                 fetch-depth: 0
+                persist-credentials: false
+
             - name: Check buildinfo
               run: |
                 git config --global --add safe.directory '*'

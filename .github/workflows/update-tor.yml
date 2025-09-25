@@ -6,38 +6,49 @@ jobs:
     check-for-tor-updates:
         runs-on: ubuntu-latest
         container: debian:bookworm
-        env:
-          # This token is used by the issue generation script to open an issue
-          # in the SecureDrop repository via the `gh` CLI (hence GH_TOKEN).
-          # It is distinct from the PUSH_TOKEN, which is used for `git`
-          # commands.
-          GH_TOKEN: ${{ secrets.ISSUES_TOKEN }}
         steps:
-            - name: Install dependencies
-              run: |
-                apt-get update && apt-get install --yes reprepro ca-certificates dctrl-tools \
-                  git git-lfs openssh-client python3 gh
-            - uses: actions/checkout@v5
-              with:
-                lfs: true
-                # This token is required to push to the protected `main` branch.
-                token: ${{ secrets.PUSH_TOKEN }}
-            - name: Check for and commit Tor package updates
-              run: |
-                git config --global --add safe.directory '*'
-                git config user.email "securedrop@freedom.press"
-                git config user.name "sdcibot"
+          - uses: actions/create-github-app-token@v2
+            id: app-token
+            with:
+              app-id: ${{ vars.FPF_BRANCH_UPDATER_APP_ID }}
+              private-key: ${{ secrets.FPF_BRANCH_UPDATER_APP_PRIVKEY }}
 
-                # Import the Tor repo signing key
-                gpg --import repo/conf/updates-keys/*.gpg
-                # Run reprepro update, skip export since we just want the debs
-                reprepro --basedir repo --outdir repo/public --export=never update
+          - name: Install dependencies
+            run: |
+              apt-get update && apt-get install --yes reprepro ca-certificates dctrl-tools \
+                git git-lfs openssh-client python3 gh
+                
+          - uses: actions/checkout@v5
+            with:
+              lfs: true
+              persist-credentials: false
 
-                # Copy the new packages over, intentionally leaving the old ones around
-                cp repo/public/pool/main/t/tor/*noble*.deb core/noble/
-                cp repo/public/pool/main/t/tor/*bookworm*.deb workstation/bookworm/
-                git add core/noble/*.deb
-                git add workstation/bookworm/*.deb
-                # If there are staged changes, git diff will fail, so we commit and push
-                git diff --staged --exit-code || (git commit -m "Automatically updating Tor packages" \
-                    && git push origin main && ./scripts/new-tor-issue)
+          - name: Check for and commit Tor package updates
+            env:
+              PUSH_TOKEN: ${{ steps.app-token.outputs.token }}
+              # This token is a FGPAT tied to sdcibot and scoped precisely to
+              # open an issue in this repo. We're not adding this priv to the
+              # GH app otherwise used for access because this case is unique,
+              # but if we ever sunset sdcibot, this will need to be updated.
+              # See: https://github.com/freedomofpress/infrastructure/issues/4708
+              # And: https://github.com/freedomofpress/infrastructure/issues/5789
+              GH_TOKEN: ${{ secrets.ISSUES_TOKEN }}
+            run: |
+              git config --global --add safe.directory '*'
+              git config user.email "securedrop@freedom.press"
+              git config user.name "sdcibot-tor[bot]"
+
+              # Import the Tor repo signing key
+              gpg --import repo/conf/updates-keys/*.gpg
+              # Run reprepro update, skip export since we just want the debs
+              reprepro --basedir repo --outdir repo/public --export=never update
+
+              # Copy the new packages over, intentionally leaving the old ones around
+              cp repo/public/pool/main/t/tor/*noble*.deb core/noble/
+              cp repo/public/pool/main/t/tor/*bookworm*.deb workstation/bookworm/
+              git add core/noble/*.deb
+              git add workstation/bookworm/*.deb
+              git remote set-url origin https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+              # If there are staged changes, git diff will fail, so we commit and push
+              git diff --staged --exit-code || (git commit -m "Automatically updating Tor packages" \
+                  && git push origin main && ./scripts/new-tor-issue)
