@@ -20,47 +20,62 @@ jobs:
         runs-on: ubuntu-latest
         container: debian:bookworm
         steps:
-            - name: Install dependencies
-              run: |
-                apt-get update
-                apt-get install --yes git git-lfs python3 python3-debian python3-jinja2 reprepro
-            - uses: actions/checkout@v5
-              with:
-                lfs: true
-                # Fetch all history for listing.py that looks at `git log`
-                fetch-depth: "0"
-                token: ${{ secrets.PUSH_TOKEN }}
-            - name: Configuration
-              env:
-                SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
-              run: |
-                echo "$SIGNING_KEY" | gpg --import -
-                git config --global --add safe.directory '*'
-                git config user.email "securedrop@freedom.press"
-                git config user.name "sdcibot"
-            - name: Clean old packages
-              run: |
-                find core -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
-                find workstation -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
-                git add .
-            - name: Sign packages
-              run: |
-                ./.github/workflows/build.py
-                # If the only thing that build.py changed is repo/db/checksums.db, reset it
-                if [[ "$(git diff --name-only)" == "repo/db/checksums.db" ]]; then
-                  git checkout repo/db/checksums.db
-                fi
-                git add .
-            - name: Update metadata
-              run: |
-                # Only run if we made changes above
-                if [[ -n "$(git diff --staged)" ]]; then
-                  reprepro --basedir ./repo --outdir ./repo/public export
-                fi
-                ./.github/workflows/listing.py
-                git add .
-            - name: git commit and push
-              run: |
-                # Index will be clean if there are no changes
-                git diff-index --quiet HEAD || git commit -m "Signing new packages"
-                git push origin main
+          - uses: actions/create-github-app-token@v2
+            id: app-token
+            with:
+              app-id: ${{ vars.FPF_BRANCH_UPDATER_APP_ID }}
+              private-key: ${{ secrets.FPF_BRANCH_UPDATER_APP_PRIVKEY }}
+
+          - name: Install dependencies
+            run: |
+              apt-get update
+              apt-get install --yes git git-lfs python3 python3-debian python3-jinja2 reprepro
+
+          - uses: actions/checkout@v5
+            with:
+              lfs: true
+              # Fetch all history for listing.py that looks at `git log`
+              fetch-depth: "0"
+              persist-credentials: false
+
+          - name: Configuration
+            env:
+              SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
+            run: |
+              echo "$SIGNING_KEY" | gpg --import -
+              git config --global --add safe.directory '*'
+              git config user.email "securedrop@freedom.press"
+              git config user.name "sdcibot-signing[bot]"
+
+          - name: Clean old packages
+            run: |
+              find core -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
+              find workstation -mindepth 1 -maxdepth 2 -type d | xargs -I '{}' ./scripts/clean-old-packages '{}' 4
+              git add .
+
+          - name: Sign packages
+            run: |
+              ./.github/workflows/build.py
+              # If the only thing that build.py changed is repo/db/checksums.db, reset it
+              if [[ "$(git diff --name-only)" == "repo/db/checksums.db" ]]; then
+                git checkout repo/db/checksums.db
+              fi
+              git add .
+
+          - name: Update metadata
+            run: |
+              # Only run if we made changes above
+              if [[ -n "$(git diff --staged)" ]]; then
+                reprepro --basedir ./repo --outdir ./repo/public export
+              fi
+              ./.github/workflows/listing.py
+              git add .
+
+          - name: git commit and push
+            env:
+              GH_TOKEN: ${{ steps.app-token.outputs.token }}
+            run: |
+              # Index will be clean if there are no changes
+              git diff-index --quiet HEAD || git commit -m "Signing new packages"
+              git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+              git push origin main
