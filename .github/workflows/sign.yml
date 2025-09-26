@@ -77,5 +77,4 @@ jobs:
             run: |
               # Index will be clean if there are no changes
               git diff-index --quiet HEAD || git commit -m "Signing new packages"
-              git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-              git push origin main
+              git push https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main
