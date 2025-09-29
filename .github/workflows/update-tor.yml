@@ -27,7 +27,7 @@ jobs:
             env:
               PUSH_TOKEN: ${{ steps.app-token.outputs.token }}
               # This token is a FGPAT tied to sdcibot and scoped precisely to
-              # open an issue in this repo. We're not adding this priv to the
+              # open an issue in the SD repo. We're not adding this priv to the
               # GH app otherwise used for access because this case is unique,
               # but if we ever sunset sdcibot, this will need to be updated.
               # See: https://github.com/freedomofpress/infrastructure/issues/4708
