@@ -29,9 +29,11 @@ apt-test:</summary>
 
 * [x] CI adds new packages to apt-test
 * [ ] Install tor, tor-geoipdb packages from apt-test on a prod
-      install and let them sit overnight
+      server install and let them sit overnight
 * [ ] Verify that tor is still running after reboot, services
       available, no errors or unexpected messages in logs
+* [ ] Provision a staging SDW, verify you can connect to the JI properly
+      through the client/app.
 * [ ] Submit a PR to `securedrop-apt-prod` to deploy
       the same packages
 
