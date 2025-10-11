@@ -587,7 +587,7 @@ MD5sum: 1725e9b618891ce2c29735287ca7c955
 Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
 
 Package: tor
-Version: 0.4.8.18-1~d12.bookworm+1
+Version: 0.4.8.19-1~d12.bookworm+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
 Installed-Size: 5771
@@ -599,11 +599,11 @@ Breaks: runit (<< 2.1.2-51~)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.8.18-1~d12.bookworm+1_amd64.deb
-Size: 2056104
-SHA256: 66e84852599f0b0f5d0f429d0acedad0903b9d82ebf60b0475e6b74d93fae424
-SHA1: 201dc0109c6666a53683ba612e95ccbc96ac2ade
-MD5sum: d0ab9174c115d6a54e283969fe523e0f
+Filename: pool/main/t/tor/tor_0.4.8.19-1~d12.bookworm+1_amd64.deb
+Size: 2057172
+SHA256: 858a3755941f648c4cdf67dac9241ac0ac92007b122f9717abc21b0368c76dd8
+SHA1: 2b58410d4cccca625e3689cc9c02111f67e079b0
+MD5sum: 0f64b9cdad1b0648707447e094c7f4e7
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -637,41 +637,41 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-dbgsym
 Source: tor
-Version: 0.4.8.18-1~d12.bookworm+1
+Version: 0.4.8.19-1~d12.bookworm+1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
 Installed-Size: 6189
-Depends: tor (= 0.4.8.18-1~d12.bookworm+1)
+Depends: tor (= 0.4.8.19-1~d12.bookworm+1)
 Breaks: tor-dbg (<< 0.3.1.5-alpha)
 Replaces: tor-dbg (<< 0.3.1.5-alpha)
 Priority: optional
 Section: debug
-Filename: pool/main/t/tor/tor-dbgsym_0.4.8.18-1~d12.bookworm+1_amd64.deb
-Size: 5761412
-SHA256: 39b635988dfae91505085cf64d26952d85028ab8d584729fa355a8ede5593ca7
-SHA1: 655ab94bec85d423d0ee14fa0261b2c5671e3dfb
-MD5sum: 0ab30b99eb0e59715c6ca0822b01931d
+Filename: pool/main/t/tor/tor-dbgsym_0.4.8.19-1~d12.bookworm+1_amd64.deb
+Size: 5762912
+SHA256: 668eb60d887c32d8363dca63eba2a7fe1b97c0545e3a5e4962740189b7a91271
+SHA1: 2349590ff1d300d5c1f4c415130305cfb5318fec
+MD5sum: d1d10b7cce575fef3611f4537a9ad024
 Description: debug symbols for tor
-Build-Ids: 19f3a5877f4ce8f74ba738f56635b866c95f8957 75f68d2a393e21eb1aa20a4e838265c2f6dbf697 9403557512eba0626c526919902b6c8efb2187eb a4538222cfb67fdd105186561dae4d11c4d1b2a4
+Build-Ids: 26e1558a74b2caeb9a08e3036fde4af5a26e1807 4ac4dd84157b03662237b51eb6ab97f601fb8a4d 8218494011c25025ed747892ee4feaeb93f2e30d ebdcd180e37b02d22d364319a16c3fd347053f78
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.8.18-1~d12.bookworm+1
+Version: 0.4.8.19-1~d12.bookworm+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 21151
-Depends: tor (>= 0.4.8.18-1~d12.bookworm+1)
+Installed-Size: 21264
+Depends: tor (>= 0.4.8.19-1~d12.bookworm+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.8.18-1~d12.bookworm+1_all.deb
-Size: 2473016
-SHA256: c02ae028a234e46d8bbeb49ec439bb439d1abe6f7de20a1bd97d2c5d67c247e8
-SHA1: d304f8726215034bfe06b5c12699f42e25c26a5c
-MD5sum: 24d1497751c63ef481e1e992559ad180
+Filename: pool/main/t/tor/tor-geoipdb_0.4.8.19-1~d12.bookworm+1_all.deb
+Size: 2494000
+SHA256: bbf2fcb64205c45f9edcff491f78f2ae018b78de757d93348698fd3d3901cb74
+SHA1: d5220cc4748675737601678b383e0d4453653c55
+MD5sum: 3ce93d4876834dc7cdd1cac883a6951e
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
