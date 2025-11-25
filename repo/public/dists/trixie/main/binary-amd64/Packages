@@ -2,15 +2,33 @@ Package: securedrop-admin
 Version: 2.13.0~rc1+trixie
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 332209
+Installed-Size: 332211
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), python3, sq, netcat-openbsd, tor, rsync
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
 Filename: pool/main/s/securedrop-admin/securedrop-admin_2.13.0~rc1+trixie_amd64.deb
-Size: 25341304
-SHA256: 33ec3ca536dc3452e01838b3b8f7976b44958fef3eaceb6f93f59f5be603968b
-SHA1: ec0bdc39791f33904a8a54ceeaa774ca402ea0da
-MD5sum: 7794dd47f6000aea4a300830f0132668
+Size: 25331540
+SHA256: 88e8cde6fdad4e760da259d388c94845f4f5ae3b396ac6dbbb72f26f8d7fd02c
+SHA1: c1d7322d643c995dee925b1ad904900c75733280
+MD5sum: 3892995f175c4645c808feae18cca4a0
 Description: SecureDrop server administration utility
+
+Package: securedrop-admin-dbgsym
+Source: securedrop-admin
+Version: 2.13.0~rc1+trixie
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 2818
+Depends: securedrop-admin (= 2.13.0~rc1+trixie)
+Priority: optional
+Section: debug
+Filename: pool/main/s/securedrop-admin/securedrop-admin-dbgsym_2.13.0~rc1+trixie_amd64.deb
+Size: 1203056
+SHA256: 13ad257b3fd4183b439c4aef4922d66173e7a1959a012b106ef4b92232a79b73
+SHA1: 1d5f6ac73dc16de057ca0b737300b0ebe0489328
+MD5sum: f85984052a6b3909b59b259c9cbcf14d
+Description: debug symbols for securedrop-admin
+Build-Ids: 0e7e43c1851e5b70a47a9a0dd2ae97a69d188fb0 4efe1bef2ddb40df49e65d94b5bd582cbc7baa4c 832314f3dbb9eaa859ce0fe0bb679a0a72f53eb3 e1d3e60e06852caf7b7bc7b387feb018f4b38108
 
