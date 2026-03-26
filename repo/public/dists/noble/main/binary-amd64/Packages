@@ -505,10 +505,10 @@ Description: Installs the pre-packaged OSSEC server
  them to SecureDrop Admin.
 
 Package: tor
-Version: 0.4.9.5-1~noble+1
+Version: 0.4.9.6-1~noble+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 3669
+Installed-Size: 3670
 Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10), libevent-2.1-7t64 (>= 2.1.8-stable), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 0.0.0~20120605), libssl3t64 (>= 3.0.0), libsystemd0, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), adduser, lsb-base
 Recommends: logrotate, tor-geoipdb, torsocks
 Suggests: mixmaster, torbrowser-launcher, socat, apparmor-utils, nyx, obfs4proxy
@@ -516,11 +516,11 @@ Conflicts: libssl0.9.8 (<< 0.9.8g-9)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.5-1~noble+1_amd64.deb
-Size: 1378842
-SHA256: e0a8a2f6a6fdb419745073e3c6d87d719df0c12e8b0afc55e2a50c1946d5e5be
-SHA1: ba536d6f10c94ca98f60a78070e4c6d5e485cdd7
-MD5sum: a4779bdc10906fe190e47c34838dc002
+Filename: pool/main/t/tor/tor_0.4.9.6-1~noble+1_amd64.deb
+Size: 1379576
+SHA256: 7af24fa4558041c668ff7062066f19fb3203318ef97a42f5a1328e4c480d5733
+SHA1: 7e5b0c737a7584ddda4c47f8c0cf6cf28657fa0e
+MD5sum: e7ee5eb0f23de48d0cf2530cb2e8462f
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -554,21 +554,21 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.5-1~noble+1
+Version: 0.4.9.6-1~noble+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 25112
-Depends: tor (>= 0.4.9.5-1~noble+1)
+Installed-Size: 24586
+Depends: tor (>= 0.4.9.6-1~noble+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.5-1~noble+1_all.deb
-Size: 2705954
-SHA256: 5383e59b66c6eb5a1b40c234670bbbf9e25de5fa86b4d350cd6c1025c6faefef
-SHA1: 2f9b73342f595ebb90880b6f30c1ebeaa70eef29
-MD5sum: 2f2b1e60707334e96f4c3abdb0995f45
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.6-1~noble+1_all.deb
+Size: 2699798
+SHA256: 021315bf158e4d50ddad82f9bda4ec268eefdcdcd896c3e19cd7f0603b451a08
+SHA1: a706b78ceec7b3c035c5e37b53b946c1812a23a3
+MD5sum: eb90a17cf63c9df0d68139a68dd3f296
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
