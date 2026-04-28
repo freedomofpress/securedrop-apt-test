@@ -1,57 +1,57 @@
 Package: securedrop-app
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 363396
+Installed-Size: 363399
 Depends: libasound2 (>= 1.0.17), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.32.0), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.34), libcairo2 (>= 1.6.0), libcups2 (>= 1.7.0), libdbus-1-3 (>= 1.9.14), libexpat1 (>= 2.1~beta3), libgbm1 (>= 21.1.0), libgcc-s1 (>= 4.2), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.9.10), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.30), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 11), libudev1 (>= 183), libx11-6 (>= 2:1.4.99.1), libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.4.5), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.5.0), libxrandr2, qubes-gpg-split
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-app_0.18.0~rc1.dev20260428180328+bookworm_amd64.deb
-Size: 95980560
-SHA256: 8ce98d5de3cbfde3baa6c1b0c8fab848e78a8381303c32e6f1158b5498b0eb96
-SHA1: cc204b64357bdabf0ce40c202e39c7d385d8128a
-MD5sum: 33e1598b302920105380e111f31773de
+Filename: pool/nightlies/s/securedrop-client/securedrop-app_0.18.0~rc1.dev20260428200202+bookworm_amd64.deb
+Size: 95990432
+SHA256: 12bb7a48c61c17f471ba81bc1af3c23b5900737ac97e7847e0bab8ae38805817
+SHA1: 85fe8ec4443138bc72e21f0798f26e314e9b849a
+MD5sum: 4fc3c3bb5b7ef09718138a85a266d4d0
 Description: SecureDrop Inbox for journalists
 
 Package: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 20784
+Installed-Size: 20785
 Depends: libc6 (>= 2.14), python3, python3-pyqt5, python3-pyqt5.qtsvg, python3-qubesdb, desktop-file-utils, qubes-gpg-split
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-client_0.18.0~rc1.dev20260428180328+bookworm_amd64.deb
-Size: 3895556
-SHA256: 64b1b2703d61508b8ac5cde33bd65d565e279a4dbc47b53e29be97cb05699f2e
-SHA1: d41a5e7f3fe6910cccfbb8e2ac849c2c5e04010a
-MD5sum: 9bc2f3a1faeb6efc12dc3c66e7294041
+Filename: pool/nightlies/s/securedrop-client/securedrop-client_0.18.0~rc1.dev20260428200202+bookworm_amd64.deb
+Size: 3895264
+SHA256: ca1b8a8909238c6e67ed0ad2def49c47feb817b52af863d1eb49187565461289
+SHA1: 223f19d22d27299da402a13b0502db79e4166e91
+MD5sum: 50128574a060be913ab99178e1b01c2e
 Description: securedrop client for qubes workstation
 
 Package: securedrop-client-dbgsym
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 82
-Depends: securedrop-client (= 0.18.0~rc1.dev20260428180328+bookworm)
+Depends: securedrop-client (= 0.18.0~rc1.dev20260428200202+bookworm)
 Priority: optional
 Section: debug
-Filename: pool/nightlies/s/securedrop-client/securedrop-client-dbgsym_0.18.0~rc1.dev20260428180328+bookworm_amd64.deb
+Filename: pool/nightlies/s/securedrop-client/securedrop-client-dbgsym_0.18.0~rc1.dev20260428200202+bookworm_amd64.deb
 Size: 49732
-SHA256: adb99d9ce25055e3e3781e19039d8e22ebe28f19c499dd5ccfe08e9f724e3880
-SHA1: 085183447130acff523215cb8835eee496075d78
-MD5sum: 2970447d4bfb2e022c77f9a0187e2858
+SHA256: 98b74281a1fa7e07c656e9a5711ed78653466657434db659c66088050bcd7840
+SHA1: 71e32c6086fdec4be58bf6616067c58c59a6b168
+MD5sum: 5727ebaea2664c4e3e9a2958369e5529
 Description: debug symbols for securedrop-client
 Build-Ids: 403d158a2dc469c663005d63028541f5f2e2537c 8f9fbbf5724d3e3464264bcce68a275e30e6cb1a cd34c1648738da811ccbe19684db741dc8ddd661 f82ea8553f251870c4980bd68129750a73722ad1
 
 Package: securedrop-export
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 10795
@@ -60,11 +60,11 @@ Breaks: printer-driver-brlaser, printer-driver-hpcups, xpp
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-export_0.18.0~rc1.dev20260428180328+bookworm_all.deb
-Size: 1643744
-SHA256: 971f3befc21e7c229eb125a58c2563b5cb763d443a8e2f6c1d46e1d089945c2b
-SHA1: bc7c680beda3423efc797d0c65e3c3f592bd0aa2
-MD5sum: 84561c3aac4410d7033c29f801a12103
+Filename: pool/nightlies/s/securedrop-client/securedrop-export_0.18.0~rc1.dev20260428200202+bookworm_all.deb
+Size: 1643752
+SHA256: b2201d6d92f1ba7445f9fb3a232c389fbe3f0869a4345b1347a5898dfafe3005
+SHA1: 5b999e8875dd0ae23bc9fb586ca67d48bef3f05d
+MD5sum: d13067c0bf9dd79d410ef74aa69fdc05
 Description: Submission export scripts for SecureDrop Workstation
  This package provides scripts used by the SecureDrop Qubes Workstation to
  export submissions from the client to external storage, via the sd-export
@@ -72,7 +72,7 @@ Description: Submission export scripts for SecureDrop Workstation
 
 Package: securedrop-gpg-config
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 26
@@ -80,32 +80,32 @@ Depends: qubes-gpg-split
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-gpg-config_0.18.0~rc1.dev20260428180328+bookworm_all.deb
+Filename: pool/nightlies/s/securedrop-client/securedrop-gpg-config_0.18.0~rc1.dev20260428200202+bookworm_all.deb
 Size: 5148
-SHA256: 77bbc6ca478c89985eed710932f5688c1ee3f44e5efb90867904edf1b3d816b6
-SHA1: e8603290ebce1b23a462b91a0ae9673561562277
-MD5sum: 5fb89154bb75dd6aca1c75a2a6e42acc
+SHA256: e435e678d2113cc6316b1a48e52e5e10c550c9a3725b78c84468396aa5689a89
+SHA1: d0ee2361d97593fd1ac6b3e5ab755bd3ca551ce8
+MD5sum: a04951ccd77ad9ab0b87b65a9b088e4b
 Description: Configures a GPG backend for use in the Qubes split-GPG context
 
 Package: securedrop-keyring
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 24
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-keyring_0.18.0~rc1.dev20260428180328+bookworm_all.deb
-Size: 10188
-SHA256: fe37bb825abaa67dcef645cb1ac02e4ad06919eef7a9304bc4144c886b075275
-SHA1: ec1752385994350b9842d5654f866271c2b94854
-MD5sum: c73dd9fa7215b7863020ed875b8eb4c2
+Filename: pool/nightlies/s/securedrop-client/securedrop-keyring_0.18.0~rc1.dev20260428200202+bookworm_all.deb
+Size: 10184
+SHA256: 851d973d706799c0869d4a81f2df86f4cda7ae7a4c96c6e341f0e6fab674b5b1
+SHA1: d4a026a739a22cf7927aa34f65b46836db87349c
+MD5sum: 8d6d72b39935713c4e527330904500c2
 Description: Provides an apt keyring for SecureDrop-related packages, so the master signing key used for SecureDrop packages can be updated via apt.
 
 Package: securedrop-log
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 10697
@@ -113,18 +113,18 @@ Depends: python3-distutils
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-log_0.18.0~rc1.dev20260428180328+bookworm_all.deb
-Size: 1612068
-SHA256: 2249b19efa8281c510f24c7d3812ae8750973cc9050a9d2e0131816187c22f2c
-SHA1: 115813c5dba798f57e39f41768dd6dfdfe24d07d
-MD5sum: 341e7181ff5c638c1eac22ebf0fbbc01
+Filename: pool/nightlies/s/securedrop-client/securedrop-log_0.18.0~rc1.dev20260428200202+bookworm_all.deb
+Size: 1612060
+SHA256: 94ffe396b2fa7a446f23eec53f80bfca528ecad1098794b19a1718aaf9696f5d
+SHA1: 7ae7c92a6d38199beeccb6f0f88f76fa9abd1728
+MD5sum: 05ffa549619271689f86df76d295a14e
 Description: Python module and qrexec service to store logs for SecureDrop Workstation
  This package provides Python module and qrexec service files to create a logging VM in
  SecureDrop Workstation project in Qubes.
 
 Package: securedrop-proxy
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 3297
@@ -132,29 +132,29 @@ Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3 (>= 3.0.0), tor, libqubesd
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-proxy_0.18.0~rc1.dev20260428180328+bookworm_amd64.deb
-Size: 1043144
-SHA256: 176a45a4f0b3e2f93ea4e5609b7a0dd69f76a28648505c8bcbf8fcc808da8dd5
-SHA1: f1f5543fbc9d0759f7e350d99ec50ecd83066558
-MD5sum: 5a952457b8faac7132d519c4b862b7c8
+Filename: pool/nightlies/s/securedrop-client/securedrop-proxy_0.18.0~rc1.dev20260428200202+bookworm_amd64.deb
+Size: 1043140
+SHA256: c7803ae1b70e829b1976428d66a6f4fcd2504fb7dde363f4f212fa37842e528b
+SHA1: 2efc971aeedf6390b5fb283f982f73d9af7063a4
+MD5sum: 4bc53e22c63ade7224ae0506b36440e1
 Description: This is securedrop Qubes proxy service
  This package provides the network proxy on Qubes to talk to the SecureDrop server.
 
 Package: securedrop-proxy-dbgsym
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 12815
-Depends: securedrop-proxy (= 0.18.0~rc1.dev20260428180328+bookworm)
+Depends: securedrop-proxy (= 0.18.0~rc1.dev20260428200202+bookworm)
 Priority: optional
 Section: debug
-Filename: pool/nightlies/s/securedrop-client/securedrop-proxy-dbgsym_0.18.0~rc1.dev20260428180328+bookworm_amd64.deb
+Filename: pool/nightlies/s/securedrop-client/securedrop-proxy-dbgsym_0.18.0~rc1.dev20260428200202+bookworm_amd64.deb
 Size: 12354192
-SHA256: d857eeaad453c17db37f11a883686564ef39cec964004e0af81aa2ff7b4d8478
-SHA1: 20467f1a27e6ca51607b0b1723b4865d93961db0
-MD5sum: 4ae400d362a271c2c159a6bbbf912395
+SHA256: 658d0beae71679895097b66d04bfef1fdcd3a995aaf7f26d65cf9ce61c3aa844
+SHA1: 1937cdb92ebc6ab4827d2be592ab6cdf02e5ecb5
+MD5sum: 9c70d863ea87deeb6fcd8d6f32c88da1
 Description: debug symbols for securedrop-proxy
 Build-Ids: cfa623740f01ee23bc865295f5db93d24eb6ffec
 
@@ -197,7 +197,7 @@ Description: Whonix configuration for SecureDrop.
 
 Package: securedrop-workstation-config
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 59
@@ -205,17 +205,17 @@ Depends: python3-qubesdb, rsyslog, mailcap, apparmor, nautilus, securedrop-keyri
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-config_0.18.0~rc1.dev20260428180328+bookworm_all.deb
-Size: 9256
-SHA256: efb4dd234cf84f4b7c0b8ba4093bea032c78148f5ec399a8c2913ca3f1c288e8
-SHA1: a3e80892c395946629ca2efa84bf0d4e3bf297ee
-MD5sum: 41813ced4bb18a2d93b6beada81f17f7
+Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-config_0.18.0~rc1.dev20260428200202+bookworm_all.deb
+Size: 9252
+SHA256: 241f1ef86bd6fda8f16b1f11e26d82d5d1d852355d11b3abe51a867f992516fe
+SHA1: 17e3ed5c6798ac8e6c3fe06c3b97b1d7b657b054
+MD5sum: bb39389fde228e567cad35298cdd2c67
 Description: This is the SecureDrop workstation template configuration package.
  This package provides dependencies and configuration for the Qubes SecureDrop workstation VM Templates.
 
 Package: securedrop-workstation-viewer
 Source: securedrop-client
-Version: 0.18.0~rc1.dev20260428180328+bookworm
+Version: 0.18.0~rc1.dev20260428200202+bookworm
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 13
@@ -223,10 +223,10 @@ Depends: securedrop-workstation-config, securedrop-workstation-grsec, apparmor-p
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-viewer_0.18.0~rc1.dev20260428180328+bookworm_all.deb
-Size: 3916
-SHA256: af537fa6dc175a9ea9c01870b14d7f7ca5e854a589d1ed7039f8ef4c62e6044d
-SHA1: eff526993a3ca7d8d574cf5e7006ed731bb02810
-MD5sum: 9c3cb5c143067dd48d0827b0354723d6
+Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-viewer_0.18.0~rc1.dev20260428200202+bookworm_all.deb
+Size: 3912
+SHA256: 86c64cb2713263f7d2a5b90f17276dac424ba37921780d02a21d7f193c7ca546
+SHA1: ca4fb9be6369d93cb8df3ac44cff2887f22d6404
+MD5sum: 07827fe12cf13984d402b3fc77adde0e
 Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
 
