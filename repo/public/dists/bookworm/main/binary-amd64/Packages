@@ -695,10 +695,10 @@ MD5sum: f553dde0b90ce9a0776c52140b9e5dc6
 Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
 
 Package: tor
-Version: 0.4.9.6-1~d12.bookworm+1
+Version: 0.4.9.7-1~d12.bookworm+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 5863
+Installed-Size: 5842
 Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libevent-2.1-7 (>= 2.1.8-stable), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 0.0.0~20120605), libssl3 (>= 3.0.0), libsystemd0, libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4), adduser, runit-helper (>= 2.14.0~), lsb-base
 Recommends: logrotate, tor-geoipdb, torsocks
 Suggests: mixmaster, torbrowser-launcher, socat, apparmor-utils, nyx, obfs4proxy
@@ -707,11 +707,11 @@ Breaks: runit (<< 2.1.2-51~)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.6-1~d12.bookworm+1_amd64.deb
-Size: 2082332
-SHA256: ef226eb13241ae23245385a7d76cf748c6671f793440052a3c9f02a81a1725ec
-SHA1: a66aa3c64861c09ae78626224a99c2b1447074ce
-MD5sum: 3bcf9fe4795e48af394b5f15d29259a4
+Filename: pool/main/t/tor/tor_0.4.9.7-1~d12.bookworm+1_amd64.deb
+Size: 2075444
+SHA256: 683445899ef0e6facccba2cf64e209e306f22dee4ab83b3c44abb999e1db4689
+SHA1: 4497ee28ed611eb4c7b0049b2d1ca07a4bdfa44e
+MD5sum: 7eb606e211d7fdffd0b4f4334ebec094
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -745,41 +745,41 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-dbgsym
 Source: tor
-Version: 0.4.9.6-1~d12.bookworm+1
+Version: 0.4.9.7-1~d12.bookworm+1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 6312
-Depends: tor (= 0.4.9.6-1~d12.bookworm+1)
+Installed-Size: 6313
+Depends: tor (= 0.4.9.7-1~d12.bookworm+1)
 Breaks: tor-dbg (<< 0.3.1.5-alpha)
 Replaces: tor-dbg (<< 0.3.1.5-alpha)
 Priority: optional
 Section: debug
-Filename: pool/main/t/tor/tor-dbgsym_0.4.9.6-1~d12.bookworm+1_amd64.deb
-Size: 5878496
-SHA256: 6c3108a66338bab5ecc1a8072b68bf1f7ac2b134006fd186c91c80ca32e5766a
-SHA1: d23b7db8544ab04625d90e016f4a895ae9172bea
-MD5sum: 47896bc4d18852f550a72cc5c80b1e0d
+Filename: pool/main/t/tor/tor-dbgsym_0.4.9.7-1~d12.bookworm+1_amd64.deb
+Size: 5880492
+SHA256: ca8350193aab4606454798e3fb40ae64f88b8d7ff583871f2579cc51b290b93a
+SHA1: 3eee9baf67aa478ef8c799b5089f4708ccb04456
+MD5sum: 8e1e186ea34abf3113c46a6ffda6c6c0
 Description: debug symbols for tor
-Build-Ids: 3085011e6fb2d6713fd3ad46692b9b4951dfb9d8 51ce4556a952334374c6667b9fddbd1bf2af2b56 ba769c7040be78ca2a9382c17a5e3938c494e22d c0941c6cd98e9ad98f0f303f78e19173d0430c2b
+Build-Ids: 0e2cb48531e892f297367870fb12a73187d741f2 3ae91ce543823fec95bd9fae91f07df4d84d0e85 48b988a17900a447f8552c69096e9e6ed4b09c2f c337b54beee0d47eea7e2d036df39d7ae5bf1c53
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.6-1~d12.bookworm+1
+Version: 0.4.9.7-1~d12.bookworm+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 25124
-Depends: tor (>= 0.4.9.6-1~d12.bookworm+1)
+Installed-Size: 26439
+Depends: tor (>= 0.4.9.7-1~d12.bookworm+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.6-1~d12.bookworm+1_all.deb
-Size: 2716316
-SHA256: 86829a6cf66f185124b49cbe644edca2553c38318e0d20a34615bcdd717db41d
-SHA1: ef9985cbcf536936009086b76849b2c04a15052b
-MD5sum: 109970ee2340f1152e0e7cd3eb0c8b21
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.7-1~d12.bookworm+1_all.deb
+Size: 2769916
+SHA256: d37f3cd328f25c36d35fe9bdc0c2d2d6d18146a1ca3ac297f09d70585ac3cd71
+SHA1: 6140b61858c3f06e6fd2746fe61d7637076037fa
+MD5sum: 98ba1d91f3c054a98f989b8deae33ac7
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
