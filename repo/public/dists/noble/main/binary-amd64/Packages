@@ -616,7 +616,7 @@ Description: Installs the pre-packaged OSSEC server
  them to SecureDrop Admin.
 
 Package: tor
-Version: 0.4.9.8-1~noble+1
+Version: 0.4.9.9-1~noble+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
 Installed-Size: 3674
@@ -627,11 +627,11 @@ Conflicts: libssl0.9.8 (<< 0.9.8g-9)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.8-1~noble+1_amd64.deb
-Size: 1380582
-SHA256: 1892a55e6a8f805c1de1001293b4d7bee16844bb68da9a7614cffa463b332083
-SHA1: e3209b53a6d688a7f49553520e41798c4f2fdf5d
-MD5sum: a9c7939b8de10897be3338ea7bb949a1
+Filename: pool/main/t/tor/tor_0.4.9.9-1~noble+1_amd64.deb
+Size: 1380264
+SHA256: ee7c9f23868ce9dd0e742b280d30beb8e5ddbbcaee2ec6afb49b285164f8fa3e
+SHA1: 34f15cc0d2d02e95aa24bf53f25379dc48847e94
+MD5sum: 84bf41a9d11a16fe631f5990c3ca78e6
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -665,21 +665,21 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.8-1~noble+1
+Version: 0.4.9.9-1~noble+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 25901
-Depends: tor (>= 0.4.9.8-1~noble+1)
+Installed-Size: 26058
+Depends: tor (>= 0.4.9.9-1~noble+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.8-1~noble+1_all.deb
-Size: 2774004
-SHA256: 794cc30c986171f4f1ddca37dca98d744b411df8b522168652c23e626c268d23
-SHA1: d84496f655819108f71caff49bfb8ef82e6642db
-MD5sum: 3b0c027f7bdc0f692c77791a6e77727b
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.9-1~noble+1_all.deb
+Size: 2817770
+SHA256: 78cae08a8c2751aec70dc954eba0cd1cec745fd42e5700b233b9f9be6da09b88
+SHA1: 09be2786831c9418ab38692ef14bdd182d47e737
+MD5sum: 3d1aaabd5a40d78feab4f8d0acb88e5b
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
