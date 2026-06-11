@@ -32,3 +32,102 @@ MD5sum: 7602752ae2efd370fef31a772cb47440
 Description: debug symbols for securedrop-admin
 Build-Ids: 33d51537bc6e4a02a842bdf5ee1c9a9e3a79b0b2 832314f3dbb9eaa859ce0fe0bb679a0a72f53eb3 a747c43900b776fe781bc343932d6e8d99e03b10 e1d3e60e06852caf7b7bc7b387feb018f4b38108
 
+Package: tor
+Version: 0.4.9.9-1~d13.trixie+1
+Architecture: amd64
+Maintainer: Peter Palfrader <weasel@debian.org>
+Installed-Size: 5881
+Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10), libevent-2.1-7t64 (>= 2.1.8-stable), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 0.0.0~20120605), libssl3t64 (>= 3.0.0), libsystemd0, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), adduser, runit-helper (>= 2.14.0~), lsb-base
+Recommends: logrotate, tor-geoipdb, torsocks
+Suggests: mixmaster, torbrowser-launcher, socat, apparmor-utils, nyx, obfs4proxy
+Conflicts: libssl0.9.8 (<< 0.9.8g-9)
+Breaks: runit (<< 2.1.2-51~)
+Homepage: https://www.torproject.org/
+Priority: optional
+Section: net
+Filename: pool/main/t/tor/tor_0.4.9.9-1~d13.trixie+1_amd64.deb
+Size: 2085560
+SHA256: 5edb9cd23d3039401d3b9283f26207a770263d301fc39699ec2d46ff4b806d2b
+SHA1: 0cd8a531522919ecfebb3101de3cc037462f2ca0
+MD5sum: 87368244ba7042076cb0256d02b28618
+Description: anonymizing overlay network for TCP
+ Tor is a connection-based low-latency anonymous communication system.
+ .
+ Clients choose a source-routed path through a set of relays, and
+ negotiate a "virtual circuit" through the network, in which each relay
+ knows its predecessor and successor, but no others. Traffic flowing
+ down the circuit is decrypted at each relay, which reveals the
+ downstream relay.
+ .
+ Basically, Tor provides a distributed network of relays. Users bounce
+ their TCP streams (web traffic, ftp, ssh, etc) around the relays, and
+ recipients, observers, and even the relays themselves have difficulty
+ learning which users connected to which destinations.
+ .
+ This package enables only a Tor client by default, but it can also be
+ configured as a relay and/or a hidden service easily.
+ .
+ Client applications can use the Tor network by connecting to the local
+ socks proxy interface provided by your Tor instance. If the application
+ itself does not come with socks support, you can use a socks client
+ such as torsocks.
+ .
+ Note that Tor does no protocol cleaning on application traffic. There
+ is a danger that application protocols and associated programs can be
+ induced to reveal information about the user. Tor depends on Torbutton
+ and similar protocol cleaners to solve this problem. For best
+ protection when web surfing, the Tor Project recommends that you use
+ the Tor Browser Bundle, a standalone tarball that includes static
+ builds of Tor, Torbutton, and a modified Firefox that is patched to fix
+ a variety of privacy bugs.
+
+Package: tor-dbgsym
+Source: tor
+Version: 0.4.9.9-1~d13.trixie+1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Peter Palfrader <weasel@debian.org>
+Installed-Size: 7479
+Depends: tor (= 0.4.9.9-1~d13.trixie+1)
+Breaks: tor-dbg (<< 0.3.1.5-alpha)
+Replaces: tor-dbg (<< 0.3.1.5-alpha)
+Priority: optional
+Section: debug
+Filename: pool/main/t/tor/tor-dbgsym_0.4.9.9-1~d13.trixie+1_amd64.deb
+Size: 5854532
+SHA256: c95d6cbfa5e7a7936331ee5e05364ae2949acda5e9031adce5052c138d20ad3d
+SHA1: 73da57034dfd11a9553552d5cc81129078e1eed5
+MD5sum: 037882eeab378adc535a3dc3104bc0b5
+Description: debug symbols for tor
+Build-Ids: 9040152bce006204725ba3e7b5df7cd52a0b50d3 9e7651d43b0870c5e1ff2902073c230bf1a5f160 ddc2df548e7a667748fcf3d90415eb99df83b407 f6101e0950c0ab57e8bedea4840f987c151f813b
+
+Package: tor-geoipdb
+Source: tor
+Version: 0.4.9.9-1~d13.trixie+1
+Architecture: all
+Maintainer: Peter Palfrader <weasel@debian.org>
+Installed-Size: 26598
+Depends: tor (>= 0.4.9.9-1~d13.trixie+1)
+Breaks: tor (<< 0.2.4.8)
+Replaces: tor (<< 0.2.4.8)
+Homepage: https://www.torproject.org/
+Priority: optional
+Section: net
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.9-1~d13.trixie+1_all.deb
+Size: 2778532
+SHA256: e876fc2952e6b99182539a750e85710e5f58998d6b9e51e3d3c036f1605b0909
+SHA1: 7832de290a3ffbf38070ab044533468532301154
+MD5sum: 4bef8010f37698578b7a9381c2755014
+Description: GeoIP database for Tor
+ This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
+ to countries.
+ .
+ Bridge relays (special Tor relays that aren't listed in the main Tor
+ directory) use this information to report which countries they see
+ connections from.  These statistics enable the Tor network operators to
+ learn when certain countries start blocking access to bridges.
+ .
+ Clients can also use this to learn what country each relay is in, so
+ Tor controllers like arm or Vidalia can use it, or if they want to
+ configure path selection preferences.
+
