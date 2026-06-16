@@ -1,3 +1,40 @@
+Package: linux-headers-6.18.35-1-grsec-workstation
+Source: linux-upstream
+Version: 6.18.35-1-grsec-workstation-1
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 181687
+Homepage: https://securedrop.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-6.18.35-1-grsec-workstation_6.18.35-1-grsec-workstation-1_amd64.deb
+Size: 27850880
+SHA256: b88ab8150d9bca39fc99402fab8a3f53e3f255c78116cc7b0a28fc0c08303dad
+SHA1: 9ccd3345b076c4b607b3e5d6c19eb5e108c7de4e
+MD5sum: 5fa93b9d679e35bf198cc95cfbb61bf3
+Description: Linux kernel headers for 6.18.35-1-grsec-workstation on amd64
+ This package provides kernel header files for 6.18.35-1-grsec-workstation on amd64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.18.35-1-grsec-workstation
+Source: linux-upstream
+Version: 6.18.35-1-grsec-workstation-1
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 405390
+Homepage: https://securedrop.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-6.18.35-1-grsec-workstation_6.18.35-1-grsec-workstation-1_amd64.deb
+Size: 61091364
+SHA256: 09a6b988658418ec6b4fc0ef0e8e7f920af3492ba484c03900970000624e1fa7
+SHA1: 43f5d17291ea1ff9424a61e5d001907954dc2617
+MD5sum: 8e5cb1fd66706f42136cb0ac13d38dfa
+Description: Linux kernel, version 6.18.35-1-grsec-workstation
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.18.35-1-grsec-workstation.
+
 Package: paxctld
 Version: 1.2.8-1
 Architecture: amd64
@@ -51,6 +88,27 @@ SHA1: 150e283cbea7c42c28abe906054f8cdc861a9823
 MD5sum: 0d95010ec774fb3011002dce9a6f9b44
 Description: debug symbols for securedrop-admin
 Build-Ids: 832314f3dbb9eaa859ce0fe0bb679a0a72f53eb3 a747c43900b776fe781bc343932d6e8d99e03b10 e1d3e60e06852caf7b7bc7b387feb018f4b38108 f3c2560c4fcef090983e4895669f7a42f225659c
+
+Package: securedrop-workstation-grsec
+Source: linux-upstream
+Version: 6.18.35-1-grsec-workstation-1
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 9
+Pre-Depends: qubes-kernel-vm-support
+Depends: linux-image-6.18.35-1-grsec-workstation, paxctld
+Homepage: https://securedrop.org/
+Priority: optional
+Section: admin
+Filename: pool/main/l/linux-upstream/securedrop-workstation-grsec_6.18.35-1-grsec-workstation-1_amd64.deb
+Size: 2064
+SHA256: 4e4d8ce1e0507edea83e4e768afb7a633dbda4b7642838140d03e2d33068d516
+SHA1: 06a5ba5e693e7146fd9d8ce0eb09a34a8b657032
+MD5sum: 005473b1e90a85dc09f716aece9af4e5
+Description: Linux for SecureDrop Workstation template (meta-package)
+ Metapackage providing a grsecurity-patched Linux kernel for use in SecureDrop
+ Workstation Qubes templates. Depends on the most recently built patched kernel
+ maintained by FPF.
 
 Package: tor
 Version: 0.4.9.9-1~d13.trixie+1
