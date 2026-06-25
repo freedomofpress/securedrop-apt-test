@@ -734,10 +734,10 @@ MD5sum: 972461a54b062b30b9d3a1ba83cd2b95
 Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
 
 Package: tor
-Version: 0.4.9.9-1~d12.bookworm+1
+Version: 0.4.9.10-1~d12.bookworm+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 5865
+Installed-Size: 5870
 Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libevent-2.1-7 (>= 2.1.8-stable), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 0.0.0~20120605), libssl3 (>= 3.0.0), libsystemd0, libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4), adduser, runit-helper (>= 2.14.0~), lsb-base
 Recommends: logrotate, tor-geoipdb, torsocks
 Suggests: mixmaster, torbrowser-launcher, socat, apparmor-utils, nyx, obfs4proxy
@@ -746,11 +746,11 @@ Breaks: runit (<< 2.1.2-51~)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.9-1~d12.bookworm+1_amd64.deb
-Size: 2085052
-SHA256: ab3bf74d9b4b6ea3df01d1f8c665180e82cef95cc9c8067c4eb9b371e9a7a141
-SHA1: c6d7e6ba4529ee76ed66864a1335d496588203f0
-MD5sum: 0b2ff447f036f2f2f9ed43d8009cd97c
+Filename: pool/main/t/tor/tor_0.4.9.10-1~d12.bookworm+1_amd64.deb
+Size: 2085700
+SHA256: e0c48124f9f1dbf0ccd7045300422cd00ec33db79fadc27edb9bce348cc1665b
+SHA1: 5489461cbed6afffdbb67d321c2bddab4e23fd62
+MD5sum: d0dc2e4b745374fd49664b88daeb6bf2
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -784,41 +784,41 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-dbgsym
 Source: tor
-Version: 0.4.9.9-1~d12.bookworm+1
+Version: 0.4.9.10-1~d12.bookworm+1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 6314
-Depends: tor (= 0.4.9.9-1~d12.bookworm+1)
+Installed-Size: 6313
+Depends: tor (= 0.4.9.10-1~d12.bookworm+1)
 Breaks: tor-dbg (<< 0.3.1.5-alpha)
 Replaces: tor-dbg (<< 0.3.1.5-alpha)
 Priority: optional
 Section: debug
-Filename: pool/main/t/tor/tor-dbgsym_0.4.9.9-1~d12.bookworm+1_amd64.deb
-Size: 5882852
-SHA256: f9055c765c126b82e6cc0e4da26d745a8b6f38d025106b4292c25d43aed89566
-SHA1: cdd339c0f616e64134dd0e76a32e065623d35d28
-MD5sum: f9698335d0ed793580a99df128f281d0
+Filename: pool/main/t/tor/tor-dbgsym_0.4.9.10-1~d12.bookworm+1_amd64.deb
+Size: 5881280
+SHA256: 647064979a8be73f68d9ad0fc57f5a7b43a77fde296adbe0b0edf830fd3d1f72
+SHA1: 97994375221b333b48ac29fa5d52b18846fc590b
+MD5sum: 65cf81514e0dbf24fcc04537aae0ba2e
 Description: debug symbols for tor
-Build-Ids: 2271eebd7747421ed8585884bf5cfe1899ea913b 6f2eb5371b9f330c7606465d8c502c280455d94f a9d1dff39309192f79f2ecd83e7dfb27471d575e e6d687f3b7bfe00c15b5fcd37b8c8da75af5afc1
+Build-Ids: 984e4903d4f3385484b7308b8f4ee50b4b77061b c2e13ab9ef1b1c85d9bfa81db4d5cfd40c6f8e79 fa6273e17ada9ca9ebe0e2246f031d508bb08c80 faeeac59884df00219082f9d036373724fa093b0
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.9-1~d12.bookworm+1
+Version: 0.4.9.10-1~d12.bookworm+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 26598
-Depends: tor (>= 0.4.9.9-1~d12.bookworm+1)
+Installed-Size: 25429
+Depends: tor (>= 0.4.9.10-1~d12.bookworm+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.9-1~d12.bookworm+1_all.deb
-Size: 2765128
-SHA256: 38c5c5c79e0f15f9261908ac2c2c3655fa7a2a9795edca9c43ba0f78ce1e8f90
-SHA1: ae27ad3de45592ac2d11a1b06766e0cc100e42d5
-MD5sum: ba21b52a383aa6f92812b2332ba41332
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.10-1~d12.bookworm+1_all.deb
+Size: 2765528
+SHA256: 17ed012b0f10f5a95bec10cd0c2963695143d61c1377ac86ceb688616e9fc9b0
+SHA1: 2b1776afa00d8c982bafa5d7cded6aaba351b58e
+MD5sum: 757a183f4d14e6290e61c1bf6ccc0b4f
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.

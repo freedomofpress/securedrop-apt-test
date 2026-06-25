@@ -111,10 +111,10 @@ Description: Linux for SecureDrop Workstation template (meta-package)
  maintained by FPF.
 
 Package: tor
-Version: 0.4.9.9-1~d13.trixie+1
+Version: 0.4.9.10-1~d13.trixie+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 5881
+Installed-Size: 5882
 Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10), libevent-2.1-7t64 (>= 2.1.8-stable), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 0.0.0~20120605), libssl3t64 (>= 3.0.0), libsystemd0, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), adduser, runit-helper (>= 2.14.0~), lsb-base
 Recommends: logrotate, tor-geoipdb, torsocks
 Suggests: mixmaster, torbrowser-launcher, socat, apparmor-utils, nyx, obfs4proxy
@@ -123,11 +123,11 @@ Breaks: runit (<< 2.1.2-51~)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.9-1~d13.trixie+1_amd64.deb
-Size: 2085560
-SHA256: 5edb9cd23d3039401d3b9283f26207a770263d301fc39699ec2d46ff4b806d2b
-SHA1: 0cd8a531522919ecfebb3101de3cc037462f2ca0
-MD5sum: 87368244ba7042076cb0256d02b28618
+Filename: pool/main/t/tor/tor_0.4.9.10-1~d13.trixie+1_amd64.deb
+Size: 2086036
+SHA256: eac7ea6c428ecbfff8bff3b86f018077c6288201da455dfb47d8167c2a9ef104
+SHA1: caab11d0eb4b7058911f822e65ec59534999cd07
+MD5sum: cc6f5ff8864aa9142277798d6cd38d5a
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -161,41 +161,41 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-dbgsym
 Source: tor
-Version: 0.4.9.9-1~d13.trixie+1
+Version: 0.4.9.10-1~d13.trixie+1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 7479
-Depends: tor (= 0.4.9.9-1~d13.trixie+1)
+Installed-Size: 7480
+Depends: tor (= 0.4.9.10-1~d13.trixie+1)
 Breaks: tor-dbg (<< 0.3.1.5-alpha)
 Replaces: tor-dbg (<< 0.3.1.5-alpha)
 Priority: optional
 Section: debug
-Filename: pool/main/t/tor/tor-dbgsym_0.4.9.9-1~d13.trixie+1_amd64.deb
-Size: 5854532
-SHA256: c95d6cbfa5e7a7936331ee5e05364ae2949acda5e9031adce5052c138d20ad3d
-SHA1: 73da57034dfd11a9553552d5cc81129078e1eed5
-MD5sum: 037882eeab378adc535a3dc3104bc0b5
+Filename: pool/main/t/tor/tor-dbgsym_0.4.9.10-1~d13.trixie+1_amd64.deb
+Size: 5854600
+SHA256: 537ebacb5e9e020aca0d33fc44c0bacc31c820b2393d020c9800b0ec4cf39391
+SHA1: 14c4453f77c6e6a80671d30f0e181bd6c5ca6f29
+MD5sum: d3d5204602a716b920473c1ccd4d50c0
 Description: debug symbols for tor
-Build-Ids: 9040152bce006204725ba3e7b5df7cd52a0b50d3 9e7651d43b0870c5e1ff2902073c230bf1a5f160 ddc2df548e7a667748fcf3d90415eb99df83b407 f6101e0950c0ab57e8bedea4840f987c151f813b
+Build-Ids: 52376cfe1844b1b0b473fd27954bd11aefbcbc63 b46f70c11fb79d08df887af8f6f823dbdd003179 c8935c2c049c997cb1e10e30f45ca28ffcc8ac1c dd7d95648f45a64999f95c725d56e0d20e82d886
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.9-1~d13.trixie+1
+Version: 0.4.9.10-1~d13.trixie+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 26598
-Depends: tor (>= 0.4.9.9-1~d13.trixie+1)
+Installed-Size: 25429
+Depends: tor (>= 0.4.9.10-1~d13.trixie+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.9-1~d13.trixie+1_all.deb
-Size: 2778532
-SHA256: e876fc2952e6b99182539a750e85710e5f58998d6b9e51e3d3c036f1605b0909
-SHA1: 7832de290a3ffbf38070ab044533468532301154
-MD5sum: 4bef8010f37698578b7a9381c2755014
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.10-1~d13.trixie+1_all.deb
+Size: 2765912
+SHA256: 3d401b984315a7e13cf4768f999e0204020a9a809dc721f75dd0c4d52a0be4a7
+SHA1: 463d47cba2061cfbca4477ff2d71943bf1c24931
+MD5sum: 163bd4c49bda5d1a299aee4c1cffae8a
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
