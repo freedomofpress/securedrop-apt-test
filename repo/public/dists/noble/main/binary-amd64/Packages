@@ -616,7 +616,7 @@ Description: Installs the pre-packaged OSSEC server
  them to SecureDrop Admin.
 
 Package: tor
-Version: 0.4.9.10-1~noble+1
+Version: 0.4.9.11-1~noble+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
 Installed-Size: 3674
@@ -627,11 +627,11 @@ Conflicts: libssl0.9.8 (<< 0.9.8g-9)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.10-1~noble+1_amd64.deb
-Size: 1380948
-SHA256: 0745098f0c4b39e64572f4fa6ff544e1ffb9bdc65f9e44fe594c4cd572a98463
-SHA1: 907c3fcee6ef3a6ae3d4c6b8e6d20d00c5599c1a
-MD5sum: e3d5d3f8fc70b73c75617b777eb61416
+Filename: pool/main/t/tor/tor_0.4.9.11-1~noble+1_amd64.deb
+Size: 1381008
+SHA256: a657ea50e0ddd5ac7ad9676107804ab1fbd90c46467bd59ef14be274781cbbbe
+SHA1: bd60a33610c9bfbb704ae2ffa25892437eba5cb4
+MD5sum: 1a1bc2b2552032b3a4ca62a329910c84
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -665,21 +665,21 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.10-1~noble+1
+Version: 0.4.9.11-1~noble+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 24888
-Depends: tor (>= 0.4.9.10-1~noble+1)
+Installed-Size: 24894
+Depends: tor (>= 0.4.9.11-1~noble+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.10-1~noble+1_all.deb
-Size: 2762382
-SHA256: c4ec040af82f404f160baa041113f7285a02d2c03661442c1beb811963991a8b
-SHA1: 94903bcd45e6fc75e7e7e37e6cb9d3b81f714773
-MD5sum: 5796a33aafc33f7e78c8c8bc25e9b387
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.11-1~noble+1_all.deb
+Size: 2766854
+SHA256: 61a2846bd7644742dff26c7cdfca95d6b420b9abf6147b315cb349a162bed1f6
+SHA1: a53be4f041ca70cbadef7ac20ea270a840e586b2
+MD5sum: 9b952e19c6706ec6f6c56e1f452de16f
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
