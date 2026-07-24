@@ -4,12 +4,12 @@ on: [pull_request]
 jobs:
     buildinfo:
         runs-on: ubuntu-latest
-        container: debian:bookworm
+        container: debian:trixie
         steps:
             - name: Install dependencies
               run: |
                 apt-get update && apt-get install --yes python3-debian git git-lfs
-                
+
             - name: Checkout
               uses: actions/checkout@v7
               with:
