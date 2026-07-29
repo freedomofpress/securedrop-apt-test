@@ -18,7 +18,7 @@ defaults:
 jobs:
     build:
         runs-on: ubuntu-latest
-        container: debian:bookworm
+        container: debian:trixie
         steps:
           - uses: actions/create-github-app-token@v3
             id: app-token

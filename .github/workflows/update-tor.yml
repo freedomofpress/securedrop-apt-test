@@ -5,7 +5,7 @@ on:
 jobs:
     check-for-tor-updates:
         runs-on: ubuntu-latest
-        container: debian:bookworm
+        container: debian:trixie
         steps:
           - uses: actions/create-github-app-token@v3
             id: app-token
@@ -45,10 +45,8 @@ jobs:
 
               # Copy the new packages over, intentionally leaving the old ones around
               cp repo/public/pool/main/t/tor/*noble*.deb core/noble/
-              cp repo/public/pool/main/t/tor/*bookworm*.deb workstation/bookworm/
               cp repo/public/pool/main/t/tor/*trixie*.deb workstation/trixie/
               git add core/noble/*.deb
-              git add workstation/bookworm/*.deb
               git add workstation/trixie/*.deb
               # If there are staged changes, git diff will fail, so we commit and push
               git diff --staged --exit-code || (git commit -m "Automatically updating Tor packages" \
