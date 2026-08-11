@@ -1,6 +1,6 @@
 Package: securedrop-app
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 389040
@@ -10,16 +10,16 @@ Replaces: securedrop-client
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-app_1.7.0~rc1.dev20260811195544+trixie_amd64.deb
-Size: 103202592
-SHA256: 39bc4630895aa34abe27fa6be781d3374c1a44eff404bbf86ae6cbe37e2bf5dd
-SHA1: e76da1c7888bf0bb7bce194b2c4c94b49e087ac9
-MD5sum: 3a7f3719287db432b7e394ffd642e064
+Filename: pool/nightlies/s/securedrop-client/securedrop-app_1.7.0~rc1.dev20260811200242+trixie_amd64.deb
+Size: 103202596
+SHA256: cf2c486ce431b133943916d014ad942bbac0d8a5bd545b9b7babc96ff913f677
+SHA1: 68adbe2f4b08db249a31bea52110776062a90baf
+MD5sum: 632a4dab1d77b6fdeb918f4d334fda41
 Description: SecureDrop Inbox for journalists
 
 Package: securedrop-export
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 5513
@@ -28,11 +28,11 @@ Breaks: printer-driver-brlaser, printer-driver-hpcups, xpp
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-export_1.7.0~rc1.dev20260811195544+trixie_all.deb
-Size: 1079492
-SHA256: 2696639efb949cbe7521760f04a03ee722985688bf18c050b12b4df38015141f
-SHA1: abb68623b8c352d42062890445b4999eec85a7f7
-MD5sum: 44418ec279fbe23dadeca210b2d7829d
+Filename: pool/nightlies/s/securedrop-client/securedrop-export_1.7.0~rc1.dev20260811200242+trixie_all.deb
+Size: 1079484
+SHA256: 02aeeb184c7932ece3f79822bea8e7fc5aafd50cc870354463a9ee75f9ed39e0
+SHA1: 3dbf650a83f34d81ccd6ee8ae389f3257e5a8415
+MD5sum: c8da2281bcc148009c18dc526b23bc2e
 Description: Submission export scripts for SecureDrop Workstation
  This package provides scripts used by the SecureDrop Qubes Workstation to
  export submissions from the client to external storage, via the sd-export
@@ -40,7 +40,7 @@ Description: Submission export scripts for SecureDrop Workstation
 
 Package: securedrop-gpg-config
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 28
@@ -48,32 +48,32 @@ Depends: qubes-gpg-split
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-gpg-config_1.7.0~rc1.dev20260811195544+trixie_all.deb
+Filename: pool/nightlies/s/securedrop-client/securedrop-gpg-config_1.7.0~rc1.dev20260811200242+trixie_all.deb
 Size: 5428
-SHA256: ce7cdc4701d520dc827ecd23a0f096a543f9ddce384813acfc7f3e5ff7fe6083
-SHA1: a286245cb9c592ba8fc2ec85674a0950fc49cd57
-MD5sum: 4ea6a6496654bd857d2631716cad19a1
+SHA256: 522a7d2a85f395831049627941c5440d2a3df6010a29829926148b3db3a8844c
+SHA1: 5ccebbd511ded4d9fc0e93545991cc6393150afb
+MD5sum: 33c5c4f9393a49f860c28bec45434dad
 Description: Configures a GPG backend for use in the Qubes split-GPG context
 
 Package: securedrop-keyring
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 24
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-keyring_1.7.0~rc1.dev20260811195544+trixie_all.deb
+Filename: pool/nightlies/s/securedrop-client/securedrop-keyring_1.7.0~rc1.dev20260811200242+trixie_all.deb
 Size: 10340
-SHA256: 363273a475a8b163dec5b11596edbb73889122e2d57f561445c112b9d7ba842f
-SHA1: 7ae2d9fc356a67a201e44a20b2cdfbab7e07b96f
-MD5sum: e712b9915d62466b01c96591f26e82a8
+SHA256: 4361a2fbd83c85f1244a694e753a26f787db5f4b97d8bde5ebcb1eea8c91912c
+SHA1: 2c96a2f7b2d361aaad90bf61560d96ce56c0b1bb
+MD5sum: afe57bf801582b1f1b19de958dddda91
 Description: Provides an apt keyring for SecureDrop-related packages, so the master signing key used for SecureDrop packages can be updated via apt.
 
 Package: securedrop-log
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 5191
@@ -81,18 +81,18 @@ Depends: python3-redis
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-log_1.7.0~rc1.dev20260811195544+trixie_all.deb
+Filename: pool/nightlies/s/securedrop-client/securedrop-log_1.7.0~rc1.dev20260811200242+trixie_all.deb
 Size: 1005980
-SHA256: 91489a490712fd5bc829399c5a44331fd324374c1643c9748d87d29864546892
-SHA1: 81115ffed298b686a7538012154c93a49f7fe91b
-MD5sum: 446561a47790c0cdb86cd87fa93f400a
+SHA256: 7c762cdf805b7224628a636b7659d891c53b9bff9c0ee0bb8a1a838fd586eee1
+SHA1: 37b02aa66d0c5bf84c3109339df2926521950f6c
+MD5sum: 7e878bd675b3b3152c937ec637530746
 Description: Python module and qrexec service to store logs for SecureDrop Workstation
  This package provides Python module and qrexec service files to create a logging VM in
  SecureDrop Workstation project in Qubes.
 
 Package: securedrop-proxy
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 4822
@@ -100,35 +100,35 @@ Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), tor, libqub
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-proxy_1.7.0~rc1.dev20260811195544+trixie_amd64.deb
-Size: 1409748
-SHA256: bbeba5f2c30fa43dfd5d4203daae24240b9095683abb7ef0d23250acef4a141b
-SHA1: 333aa0ad7bc805f46f591514847f982be86b30c9
-MD5sum: afc1324e1ecf7d9e97b94212e9829a27
+Filename: pool/nightlies/s/securedrop-client/securedrop-proxy_1.7.0~rc1.dev20260811200242+trixie_amd64.deb
+Size: 1409756
+SHA256: 60af973e09c89ab29db8d0c8c1ba53fae16ed5110413158f59af8216bc31f62c
+SHA1: 54d172246acf26af10b66900bb0cfc7345dab922
+MD5sum: 38572a13e0efbb5ecd5a0c0029fe8b7e
 Description: This is securedrop Qubes proxy service
  This package provides the network proxy on Qubes to talk to the SecureDrop server.
 
 Package: securedrop-proxy-dbgsym
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 17318
-Depends: securedrop-proxy (= 1.7.0~rc1.dev20260811195544+trixie)
+Depends: securedrop-proxy (= 1.7.0~rc1.dev20260811200242+trixie)
 Priority: optional
 Section: debug
-Filename: pool/nightlies/s/securedrop-client/securedrop-proxy-dbgsym_1.7.0~rc1.dev20260811195544+trixie_amd64.deb
+Filename: pool/nightlies/s/securedrop-client/securedrop-proxy-dbgsym_1.7.0~rc1.dev20260811200242+trixie_amd64.deb
 Size: 16502376
-SHA256: f0ee803872a1f929dfa9a446ee5d77b58b8c447f30d1388c416fd884f6d1d59c
-SHA1: 17496937b9a30dae44a273528997fbc086f8f937
-MD5sum: 77cf9e886a9c6b1e9d164312c0ef7a6a
+SHA256: 5e1875d77b46e0bf976a53c486b72c516292b55dfddfe9c657623b02dd141e3f
+SHA1: ca59bd41c9e5de99f8a72454332325c71369db80
+MD5sum: 216702c1019fae740d49bf099f94d594
 Description: debug symbols for securedrop-proxy
 Build-Ids: c6957c863918703371c53d331fea6726efdad9d6
 
 Package: securedrop-workstation-config
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 59
@@ -136,17 +136,17 @@ Depends: python3-qubesdb, rsyslog, mailcap, apparmor, nautilus, securedrop-keyri
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-config_1.7.0~rc1.dev20260811195544+trixie_all.deb
-Size: 9416
-SHA256: 3af3adcff8bbdbdfe940f94b90f5fb1df4233c489e384b5c8c9e686a585a51e7
-SHA1: 13a52de72e05ce41af6f6c44444cd498c26b071c
-MD5sum: 2f97ffb8970fadff54420936c508245b
+Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-config_1.7.0~rc1.dev20260811200242+trixie_all.deb
+Size: 9420
+SHA256: 3a765c974212a59972dbfa4971524a698b9f508b5138dbf82e4f16290885def5
+SHA1: 778e106d3dc0ed3803de388e87ed5d042b830364
+MD5sum: 7a5b67ec030e2a3207515ca6e6e7cb9e
 Description: This is the SecureDrop workstation template configuration package.
  This package provides dependencies and configuration for the Qubes SecureDrop workstation VM Templates.
 
 Package: securedrop-workstation-viewer
 Source: securedrop-client
-Version: 1.7.0~rc1.dev20260811195544+trixie
+Version: 1.7.0~rc1.dev20260811200242+trixie
 Architecture: all
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 13
@@ -154,10 +154,10 @@ Depends: securedrop-workstation-config, securedrop-workstation-grsec, apparmor-p
 Homepage: https://github.com/freedomofpress/securedrop-client
 Priority: optional
 Section: unknown
-Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-viewer_1.7.0~rc1.dev20260811195544+trixie_all.deb
-Size: 4080
-SHA256: aef2fc84089f369bb7384ffcd250870964d2be2f03bed49a43fac44d01376431
-SHA1: 7958cb4594aafb43fa42ee700cbb3749ccf612d7
-MD5sum: abac29ab96e99175d30d4128b8342e96
+Filename: pool/nightlies/s/securedrop-client/securedrop-workstation-viewer_1.7.0~rc1.dev20260811200242+trixie_all.deb
+Size: 4076
+SHA256: 63f5fceb4604ef4df299ed2284562a342b89e913bcb5633e2fb8f963e79d65eb
+SHA1: d2210e4cf4304f4ab0e5f214b3b2ebf6414e17c0
+MD5sum: 08dd773a2f5bae152256053dc917530f
 Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
 
