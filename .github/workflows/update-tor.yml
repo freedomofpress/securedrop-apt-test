@@ -2,6 +2,7 @@ name: Tor package updates
 on:
   schedule:
     - cron: "0 7 * * *"
+  workflow_dispatch: 
 jobs:
     check-for-tor-updates:
         runs-on: ubuntu-latest
