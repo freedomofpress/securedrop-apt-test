@@ -93,6 +93,25 @@ Description: Linux kernel headers for 6.6.141-1-grsec-securedrop on amd64
  .
  This is useful for people who need to build external modules
 
+Package: linux-headers-6.6.157-1-grsec-securedrop
+Source: linux-upstream
+Version: 6.6.157-1-grsec-securedrop-1
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 190237
+Homepage: https://securedrop.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-headers-6.6.157-1-grsec-securedrop_6.6.157-1-grsec-securedrop-1_amd64.deb
+Size: 25164876
+SHA256: 369a653d5679f4eeacaae75b0d0aa1b01b3abf563eafcf85c54324019334ff67
+SHA1: d194fb6d56bf116384299329459a4a4576e7425b
+MD5sum: 9b4c3f7c0eb21418b33bf481c744ed7d
+Description: Linux kernel headers for 6.6.157-1-grsec-securedrop on amd64
+ This package provides kernel header files for 6.6.157-1-grsec-securedrop on amd64
+ .
+ This is useful for people who need to build external modules
+
 Package: linux-headers-6.6.58-1-grsec-securedrop
 Source: linux-upstream
 Version: 6.6.58-1-grsec-securedrop-1
@@ -296,6 +315,24 @@ MD5sum: a7e507aebb878334c3c0bd83fd753b74
 Description: Linux kernel, version 6.6.141-1-grsec-securedrop
  This package contains the Linux kernel, modules and corresponding other
  files, version: 6.6.141-1-grsec-securedrop.
+
+Package: linux-image-6.6.157-1-grsec-securedrop
+Source: linux-upstream
+Version: 6.6.157-1-grsec-securedrop-1
+Architecture: amd64
+Maintainer: SecureDrop Team <securedrop@freedom.press>
+Installed-Size: 469447
+Homepage: https://securedrop.org/
+Priority: optional
+Section: kernel
+Filename: pool/main/l/linux-upstream/linux-image-6.6.157-1-grsec-securedrop_6.6.157-1-grsec-securedrop-1_amd64.deb
+Size: 71398592
+SHA256: 9d462f430f3a704ac50ea3cdec6b7bb5a205e2778e6e931097342ef9cb6e3fc2
+SHA1: 80fb62c8295d0ad8c22a7b0480c99260cec5e6f5
+MD5sum: 5974bd8235b0ea8f68fe7c5ee97e8373
+Description: Linux kernel, version 6.6.157-1-grsec-securedrop
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.6.157-1-grsec-securedrop.
 
 Package: linux-image-6.6.58-1-grsec-securedrop
 Source: linux-upstream
@@ -536,19 +573,19 @@ Build-Ids: 45dcc25f91183e34624abe092d08c6b8199ae071 b8470199af598f5240007f4d376e
 
 Package: securedrop-grsec
 Source: linux-upstream
-Version: 6.6.141-1-grsec-securedrop-1
+Version: 6.6.157-1-grsec-securedrop-1
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 16
-Depends: linux-image-6.6.141-1-grsec-securedrop, intel-microcode, amd64-microcode, paxctld
+Depends: linux-image-6.6.157-1-grsec-securedrop, intel-microcode, amd64-microcode, paxctld
 Homepage: https://securedrop.org/
 Priority: optional
 Section: admin
-Filename: pool/main/l/linux-upstream/securedrop-grsec_6.6.141-1-grsec-securedrop-1_amd64.deb
+Filename: pool/main/l/linux-upstream/securedrop-grsec_6.6.157-1-grsec-securedrop-1_amd64.deb
 Size: 3328
-SHA256: 22544c4e5ac437bb3135508dd4a72689459b956aa427401c1d7509f433185d9e
-SHA1: 26a203405e763435ad7742961ab21dcb793070fc
-MD5sum: 4d1557e6b77f4691d1c83a6f1568aa4d
+SHA256: eb50b95ce996fa7a10b46959f3d60f97f30fd70368afb695ec533c65d6e8bc96
+SHA1: bff8044d67dea5beeccd84eca8223905124ffc7f
+MD5sum: 9b9aec3add84b6ec572d236ba0bb2d64
 Description: Metapackage providing a grsecurity-patched Linux kernel for use
  with SecureDrop. Depends on the most recently built patched kernel maintained
  by FPF. Package also includes sysctl and PaX flags calls for GRUB.
