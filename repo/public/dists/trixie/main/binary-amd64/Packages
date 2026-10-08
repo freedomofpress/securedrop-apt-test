@@ -311,10 +311,10 @@ MD5sum: 327610a9ef970e57e7f4c69888f96e57
 Description: This is the SecureDrop workstation SecureDrop Viewer Disposable VM template configuration package. This package provides dependencies and configuration for the Qubes SecureDrop workstation sd-viewer Template VM.
 
 Package: tor
-Version: 0.4.9.13-1~d13.trixie+1
+Version: 0.4.9.14-1~d13.trixie+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 5893
+Installed-Size: 5906
 Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10), libevent-2.1-7t64 (>= 2.1.8-stable), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 0.0.0~20120605), libssl3t64 (>= 3.0.0), libsystemd0, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), adduser, runit-helper (>= 2.14.0~), lsb-base
 Recommends: logrotate, tor-geoipdb, torsocks
 Suggests: mixmaster, torbrowser-launcher, socat, apparmor-utils, nyx, obfs4proxy
@@ -323,11 +323,11 @@ Breaks: runit (<< 2.1.2-51~)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.13-1~d13.trixie+1_amd64.deb
-Size: 2094552
-SHA256: dfa00e4d058de40a65b8c0f3f3ba9ffdb1bf7f564ec0f8bbb671e83e1c1353ea
-SHA1: c399e3e34f6186c1850005a1d387c8537aa8a5bf
-MD5sum: d20c257f6a0a2d8f47de4fd7301871f5
+Filename: pool/main/t/tor/tor_0.4.9.14-1~d13.trixie+1_amd64.deb
+Size: 2099760
+SHA256: ce850c12da1feef6036417ebf0bd83ae39558bf5357bf3dd14a7d91218f58d24
+SHA1: 843960594180fcf050e8bd992a5e12359483fd39
+MD5sum: 4860f29d73049756957624ee46ce811e
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -361,41 +361,41 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-dbgsym
 Source: tor
-Version: 0.4.9.13-1~d13.trixie+1
+Version: 0.4.9.14-1~d13.trixie+1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 7500
-Depends: tor (= 0.4.9.13-1~d13.trixie+1)
+Installed-Size: 7514
+Depends: tor (= 0.4.9.14-1~d13.trixie+1)
 Breaks: tor-dbg (<< 0.3.1.5-alpha)
 Replaces: tor-dbg (<< 0.3.1.5-alpha)
 Priority: optional
 Section: debug
-Filename: pool/main/t/tor/tor-dbgsym_0.4.9.13-1~d13.trixie+1_amd64.deb
-Size: 5871736
-SHA256: ffac2bd9ff32002becd3674b2affbee9fa2f82575ba8b32d9e00533e227e96da
-SHA1: dd597b2ffab427df426bba35af2e13b06446f9f7
-MD5sum: 38050c0385f2dd9a66d1c8d7cb2a1b54
+Filename: pool/main/t/tor/tor-dbgsym_0.4.9.14-1~d13.trixie+1_amd64.deb
+Size: 5885616
+SHA256: 2ca262a0837c33cb36b21fe00ed61edad837bd283f7b8a9060891b69d4b34f0e
+SHA1: b711a2635e3f95c25af6900a3c2f350f8809fd66
+MD5sum: 4abc3d0de39b9a43a46b6d31c4596283
 Description: debug symbols for tor
-Build-Ids: 03fa99a5169b8ec88f835a546efe7bc32d453c12 37ba69016da56a27f2b2420f8e95261a1efad337 5520a649b28dbbd73f9977cba5b724a54fe92a56 5ef1b7e7a272edae9593f00f626448fa6c968855
+Build-Ids: 33f5d4bbef1a4721527163e4ca6071670183089d cf0076098fd79775229b50e5800b276fd729332c d1e760eee4431810223c84a735adfc2e128b9fb8 efaa24a57cc80bed53165bec682b19001a5a0315
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.13-1~d13.trixie+1
+Version: 0.4.9.14-1~d13.trixie+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 25949
-Depends: tor (>= 0.4.9.13-1~d13.trixie+1)
+Installed-Size: 26321
+Depends: tor (>= 0.4.9.14-1~d13.trixie+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.13-1~d13.trixie+1_all.deb
-Size: 2797424
-SHA256: 1a4e7ee40292111db20583b2d8599103fc6ea0f322f9b5cfe74a5c23096ad177
-SHA1: 6b07adb4c8df1673f000505a9903815d10765136
-MD5sum: 6dacf511e59d2ae7664cca112c0fd692
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.14-1~d13.trixie+1_all.deb
+Size: 2862080
+SHA256: 4c42c6c6ea87696776518f17349fcdce867f75cac7d67a779d0baf2802d5426b
+SHA1: 64009b614b0db073cc65e5a60fa4f8ee7908e6fb
+MD5sum: 5144189a889ca47d565adfb6466cab6a
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
