@@ -1,5 +1,5 @@
 Package: securedrop-admin
-Version: 2.17.0~rc1.dev20261015071851+trixie
+Version: 2.17.0~rc1.dev20261015151300+trixie
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 330805
@@ -7,46 +7,46 @@ Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2), python3, sq, netcat-openbsd, tor, 
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
-Filename: pool/nightlies/s/securedrop-admin/securedrop-admin_2.17.0~rc1.dev20261015071851+trixie_amd64.deb
-Size: 25400244
-SHA256: d1ef65ff5dae98219f8fe2ef0210d13e608af98de0df562cb4aafd0e96ab23a1
-SHA1: a8523d6da0569c34b07b0bc5b5534fc6638811f9
-MD5sum: aff171bc425c68ddf160676c2c811e7b
+Filename: pool/nightlies/s/securedrop-admin/securedrop-admin_2.17.0~rc1.dev20261015151300+trixie_amd64.deb
+Size: 25400560
+SHA256: 79f9d18403c04a81d27315de015c2ca7bc503226f72a383eb56d1292371267c3
+SHA1: 6024316aea5c852b0b93fe219df0cac037c422db
+MD5sum: 5c7aff4accaeda90bfa845ea80ed0f31
 Description: SecureDrop server administration utility
 
 Package: securedrop-admin-dbgsym
 Source: securedrop-admin
-Version: 2.17.0~rc1.dev20261015071851+trixie
+Version: 2.17.0~rc1.dev20261015151300+trixie
 Auto-Built-Package: debug-symbols
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
 Installed-Size: 2570
-Depends: securedrop-admin (= 2.17.0~rc1.dev20261015071851+trixie)
+Depends: securedrop-admin (= 2.17.0~rc1.dev20261015151300+trixie)
 Priority: optional
 Section: debug
-Filename: pool/nightlies/s/securedrop-admin/securedrop-admin-dbgsym_2.17.0~rc1.dev20261015071851+trixie_amd64.deb
+Filename: pool/nightlies/s/securedrop-admin/securedrop-admin-dbgsym_2.17.0~rc1.dev20261015151300+trixie_amd64.deb
 Size: 888188
-SHA256: 86e519d2b2ef4f0e328d3dddc31c2a1285adcfd5155449105cf3013abcf90766
-SHA1: 61e58542af486c3807ca1b45109b9ebdb09f22cc
-MD5sum: cb334f2dc35de94c48e4a4a9b251743e
+SHA256: bfd5cf9e0bbf1ae894808def39699251245211c810cad0e88b055f8fca929613
+SHA1: 0af0c7038a63a39b4e57539c5fa5ee3536cc8d9b
+MD5sum: 13f6128bf3a185956b5bbb3631dc48a3
 Description: debug symbols for securedrop-admin
 Build-Ids: 832314f3dbb9eaa859ce0fe0bb679a0a72f53eb3 a747c43900b776fe781bc343932d6e8d99e03b10 e1d3e60e06852caf7b7bc7b387feb018f4b38108 f3c2560c4fcef090983e4895669f7a42f225659c
 
 Package: securedrop-admin-qubes
 Source: securedrop-admin
-Version: 2.17.0~rc1.dev20261015071851+trixie
+Version: 2.17.0~rc1.dev20261015151300+trixie
 Architecture: amd64
 Maintainer: SecureDrop Team <securedrop@freedom.press>
-Installed-Size: 27
+Installed-Size: 31
 Depends: qubes-vm-recommended, xfce4-terminal, securedrop-admin, torbrowser-launcher, firefox-esr, gnome-disk-utility, locales-all
 Homepage: https://securedrop.org
 Priority: optional
 Section: web
-Filename: pool/nightlies/s/securedrop-admin/securedrop-admin-qubes_2.17.0~rc1.dev20261015071851+trixie_amd64.deb
-Size: 3952
-SHA256: a103839b1c2d4ca949e5f3178048686a80fbea40b38e8be83456a878d9830f5b
-SHA1: 883fa09fcf99ddf51cb1ec849f87aa79607eeffb
-MD5sum: a00413ff5810c7087c49f1018c56dfc8
+Filename: pool/nightlies/s/securedrop-admin/securedrop-admin-qubes_2.17.0~rc1.dev20261015151300+trixie_amd64.deb
+Size: 4252
+SHA256: 6b1266f68fe7ef9acebebdc6b6509c099d93212eae268b0827756e3e83329411
+SHA1: ac5607d7cd36c3eab1f5206ea129d8341bba0b23
+MD5sum: 2e9200ef1641f6b51e081c5fe70f5195
 Description: Metapackage for using SecureDrop admin tools on Qubes
 
 Package: securedrop-app
