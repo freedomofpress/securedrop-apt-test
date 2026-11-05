@@ -690,7 +690,7 @@ Description: Installs the pre-packaged OSSEC server
  them to SecureDrop Admin.
 
 Package: tor
-Version: 0.4.9.15-1~noble+1
+Version: 0.4.9.16-1~noble+1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
 Installed-Size: 5578
@@ -701,11 +701,11 @@ Conflicts: libssl0.9.8 (<< 0.9.8g-9)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor_0.4.9.15-1~noble+1_amd64.deb
-Size: 1757580
-SHA256: a87c8da34869599f03e3706661ca6770bf4fbc395ec994b10da68d9c73e8c2c1
-SHA1: a5a997696baeec21736286fe9c5d7dd5a5595147
-MD5sum: 5b6781b6e16619aa0adffd688e9e84cb
+Filename: pool/main/t/tor/tor_0.4.9.16-1~noble+1_amd64.deb
+Size: 1757974
+SHA256: 90aa64065178a458efd008ea597de2e6541d37eee29b448c78d3490f3042a307
+SHA1: 89dc9797cede1367cd4dc075500cc7a0112f86c3
+MD5sum: 9038cd58d0dad5929853b70e87011dd7
 Description: anonymizing overlay network for TCP
  Tor is a connection-based low-latency anonymous communication system.
  .
@@ -739,21 +739,21 @@ Description: anonymizing overlay network for TCP
 
 Package: tor-geoipdb
 Source: tor
-Version: 0.4.9.15-1~noble+1
+Version: 0.4.9.16-1~noble+1
 Architecture: all
 Maintainer: Peter Palfrader <weasel@debian.org>
 Installed-Size: 25341
-Depends: tor (>= 0.4.9.15-1~noble+1)
+Depends: tor (>= 0.4.9.16-1~noble+1)
 Breaks: tor (<< 0.2.4.8)
 Replaces: tor (<< 0.2.4.8)
 Homepage: https://www.torproject.org/
 Priority: optional
 Section: net
-Filename: pool/main/t/tor/tor-geoipdb_0.4.9.15-1~noble+1_all.deb
-Size: 2838842
-SHA256: 2b8127116dda91b931584d4fd8882861c33a31a5c2afa7c529a3dff2360ec189
-SHA1: 087db226dd0bdbdc1602924c177e81b5c5e21b5f
-MD5sum: 39f506c3fd00c529266ddcbba21bcddb
+Filename: pool/main/t/tor/tor-geoipdb_0.4.9.16-1~noble+1_all.deb
+Size: 2828146
+SHA256: 6d51c21703cd4f196d24b0e382ba64ddc4562e60175b9c98bc61b35fa02bb7f3
+SHA1: a2f066f016842da9c2830e5343eeb36e60d8945e
+MD5sum: 228db98cc357714a4a343923acce9c05
 Description: GeoIP database for Tor
  This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
  to countries.
